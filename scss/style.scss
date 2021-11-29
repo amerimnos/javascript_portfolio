@@ -1,0 +1,39 @@
+/* === reset start ===*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+ol,
+ul {
+	list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* === reset end ===*/
+
+header { //흠.... 꽉찬 2뎁스로 만들까?? 아니면 평범하게??
+    padding: 15px;
+    background: rgb(240, 240, 240);
+	.nav {
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+       
+		&__logo {
+            font-size: 25px;
+		}
+        &__gnb{
+            display: flex;
+            &--txtBold{
+                font-weight: bold;
+            }
+            &-depth1-item{
+
+            }
+
+        }
+	}
+}

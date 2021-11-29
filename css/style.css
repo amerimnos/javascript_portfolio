@@ -1,0 +1,30 @@
+/* === reset start ===*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+ol,
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+/* === reset end ===*/
+header {
+  padding: 15px;
+  background: #f0f0f0; }
+  header .nav {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex; }
+    header .nav__logo {
+      font-size: 25px; }
+    header .nav__gnb {
+      display: flex; }
+      header .nav__gnb--txtBold {
+        font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
