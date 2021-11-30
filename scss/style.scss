@@ -1,39 +1,87 @@
 /* === reset start ===*/
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
-ol,
-ul {
-	list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
-/* === reset end ===*/
 
-header { //흠.... 꽉찬 2뎁스로 만들까?? 아니면 평범하게??
-    padding: 15px;
+ol, ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === reset end ===*/
+header {
+    //흠.... 꽉찬 2뎁스로 만들까?? 아니면 평범하게?? padding: 15px;
     background: rgb(240, 240, 240);
-	.nav {
+    .nav {
         width: 1180px;
         margin: 0 auto;
+        padding: 10px 0;
         display: flex;
-       
-		&__logo {
-            font-size: 25px;
-		}
-        &__gnb{
+        justify-content: space-between;
+        &__logo {
+            font-size: 37px;
+        }
+
+        &__gnb {
+            width: 100%;
             display: flex;
-            &--txtBold{
+            justify-content: space-evenly;
+            align-items: center;
+            &-depth1-item {
+                position: relative;
+                text-align: center;
+                transition: all 0.5s;
+                border-radius: 10px;
+                &:hover {
+                    background-color: #dcdcdc;
+                }
+
+                &:hover .nav__gnb-depth2 {
+                    display: block;
+                }
+            }
+
+            &-title {
+                display: inline-block;
+                padding: 10px;
+                border-radius: 21px;
+                text-align: center;
                 font-weight: bold;
             }
-            &-depth1-item{
 
+            &-depth2 {
+                display: none;
+                position: absolute;
+                top: 42px;
+                width: 200px;
+                border-radius: 9px;
+                transition: 0.5s;
+                background-color: #fff;
+                box-shadow: 1px 1px 9px #cacaca;
             }
 
+            &-depth2-item {
+                margin: 0 0 0 33px;
+                color: #8e8e8e;
+                list-style-type: disc;
+                transition: 0.5s;
+                > a {
+                    display: block;
+                    padding: 11px 0;
+                    text-align: left;
+                }
+
+                &:hover {
+                    color: #34a0ff;
+                }
+            }
         }
-	}
+    }
 }

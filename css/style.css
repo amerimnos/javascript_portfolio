@@ -3,28 +3,65 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
-ol,
-ul {
+ol, ul {
   list-style-type: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 /* === reset end ===*/
 header {
-  padding: 15px;
   background: #f0f0f0; }
   header .nav {
     width: 1180px;
     margin: 0 auto;
-    display: flex; }
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; }
     header .nav__logo {
-      font-size: 25px; }
+      font-size: 37px; }
     header .nav__gnb {
-      display: flex; }
-      header .nav__gnb--txtBold {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      header .nav__gnb-depth1-item {
+        position: relative;
+        text-align: center;
+        transition: all 0.5s;
+        border-radius: 10px; }
+        header .nav__gnb-depth1-item:hover {
+          background-color: #dcdcdc; }
+        header .nav__gnb-depth1-item:hover .nav__gnb-depth2 {
+          display: block; }
+      header .nav__gnb-title {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 21px;
+        text-align: center;
         font-weight: bold; }
+      header .nav__gnb-depth2 {
+        display: none;
+        position: absolute;
+        top: 42px;
+        width: 200px;
+        border-radius: 9px;
+        transition: 0.5s;
+        background-color: #fff;
+        box-shadow: 1px 1px 9px #cacaca; }
+      header .nav__gnb-depth2-item {
+        margin: 0 0 0 33px;
+        color: #8e8e8e;
+        list-style-type: disc;
+        transition: 0.5s; }
+        header .nav__gnb-depth2-item > a {
+          display: block;
+          padding: 11px 0;
+          text-align: left; }
+        header .nav__gnb-depth2-item:hover {
+          color: #34a0ff; }
 
 /*# sourceMappingURL=style.css.map */
