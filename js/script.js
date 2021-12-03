@@ -72,12 +72,19 @@ for (const el of gnbItem) {
 }
 for (const el of gnbSubitem) {
     el.onblur = e => {
-        if (e.currentTarget.closest(".nav__gnb-depth2").lastElementChild.querySelector("a") == e.target) {
+        const gnbDepth2 = e.currentTarget.closest(".nav__gnb-depth2").lastElementChild.querySelector("a")
+        if (gnbDepth2 == e.target) {
             e.currentTarget.closest(".nav__gnb-depth2").classList.remove("on");
         }
-
     }
+    el.addEventListener('keydown', e => {
+        if (e.code == 'Escape') {
+            e.currentTarget.closest(".nav__gnb-depth2").classList.remove("on");
+        }
+    })
 }
+
+
 
 /* 헤더 전체메뉴 기능 */
 const totalMenuBtn = document.querySelector(".nav__total-menu");
@@ -85,12 +92,12 @@ const totalMenuContents = document.querySelector(".total-menu");
 totalMenuBtn.addEventListener("click", e => {
     e.preventDefault();
     totalMenuBtn.classList.add("on");
-    totalMenuContents.classList.add("on");
+    //totalMenuContents.classList.add("on");
 
 });
 totalMenuBtn.addEventListener("focus", () => {
     totalMenuBtn.classList.add("on");
-    totalMenuContents.classList.add("on");
+    //totalMenuContents.classList.add("on");
 });
 
 

@@ -17,16 +17,17 @@ a {
 header {
   background: #f0f0f0; }
   header .nav {
-    width: 1180px;
+    width: 1200px;
     margin: 0 auto;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     header .nav__logo {
+      width: 20%;
       font-size: 37px; }
     header .nav__gnb {
-      width: 100%;
+      width: calc(80% - 30px);
       display: flex;
       justify-content: space-evenly;
       align-items: center; }
@@ -65,36 +66,38 @@ header {
           display: inline-block;
           padding: 5px 0;
           overflow: hidden; }
-          header .nav__gnb-depth2-item > a::after {
+          header .nav__gnb-depth2-item > a::before {
             content: "";
             display: block;
             position: absolute;
-            top: 0;
-            height: 100%;
+            bottom: 0;
             width: 100%;
-            background: linear-gradient(313deg, #8fcbffa8, #e5f3ff99);
+            height: 1px;
+            background: linear-gradient(313deg, #0056ff, #00ffcd);
             transition-timing-function: ease-in-out;
-            transition: 0.7s;
-            transform: translateX(-100%); }
+            transition: transform 0.7s;
+            transform: scaleX(0);
+            transform-origin: right bottom; }
         header .nav__gnb-depth2-item:hover {
-          color: #34a0ff; }
-        header .nav__gnb-depth2-item:hover a::after {
+          color: #368efb; }
+        header .nav__gnb-depth2-item:hover a::before {
           width: 100%;
-          transform: translateX(100%); }
+          transform: scaleX(1);
+          transform-origin: left bottom; }
     header .nav__total-menu {
       position: relative;
       width: 30px;
-      height: 22px;
-      overflow: hidden; }
+      height: 30px; }
       header .nav__total-menu::before {
         content: "";
         display: block;
         position: absolute;
-        top: 0;
+        top: 4px;
+        left: 0;
         width: 100%;
         height: 2px;
         background: #000;
-        transition: 1s; }
+        transition: 0.7s; }
       header .nav__total-menu span {
         display: block;
         position: absolute;
@@ -103,33 +106,60 @@ header {
         height: 2px;
         margin: -1px 0 0 0;
         background: #000;
-        transition: 1s; }
+        transition: 0.7s; }
       header .nav__total-menu::after {
         content: "";
         display: block;
         position: absolute;
-        bottom: 0;
+        bottom: 4px;
         width: 100%;
         height: 2px;
         background: #000;
-        transition: 1s; }
+        transition: 0.7s; }
       header .nav__total-menu.on::before {
-        transform: rotateX(45deg); }
+        transform: rotateZ(90deg);
+        left: calc(50% - 1px);
+        top: 0px;
+        transform-origin: left;
+        }
       header .nav__total-menu.on span {
-        transform: translateX(100%); }
+        opacity: 0; }
       header .nav__total-menu.on::after {
-        transform: rotateX(-45deg); }
+        bottom: calc(50% - 1px);
+        transform: rotateX(-45deg);
+        }
   header .total-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
-    background: #000; }
+    background-color: #000; }
+    header .total-menu > ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-content: space-around;
+      max-width: 1200px;
+      height: calc(100vh - 120px);
+      margin: 60px auto; }
     header .total-menu * {
       color: #fff; }
     header .total-menu.on {
       display: block; }
+    header .total-menu__depth1 {
+      padding: 0 20px; }
+      header .total-menu__depth1 > a {
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        padding: 0 0 13px 0;
+        border-bottom: solid 1px #fff; }
+    header .total-menu__depth2-item {
+      list-style-type: disc;
+      margin: 0 0 8px 0; }
+      header .total-menu__depth2-item > a:hover {
+        color: #a4e2ff; }
 
 /*# sourceMappingURL=style.css.map */
