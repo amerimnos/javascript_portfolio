@@ -1,4 +1,10 @@
-/* 애니메이션 기본 셋팅 jquery처럼 간편하게 쓸 수 있게 */
+const gnbItem = document.querySelectorAll(".nav__gnb-title");
+const gnbSubitem = document.querySelectorAll(".nav__gnb-depth2-item > a");
+const totalMenuBtn = document.querySelector(".nav__total-menu");
+const totalMenuContents = document.querySelector(".total-menu");
+
+
+/* 애니메이션 기본 셋팅 jquery처럼 간편하게 쓸 수 있게 (숫자 형태만 가능)*/
 class Anime {
     constructor(selector, option) {
         this.selector = selector;
@@ -28,9 +34,8 @@ class Anime {
         if (this.isString == "string") this.option.value = parseFloat(this.option.value);
         if (this.option.value !== this.currentValue) requestAnimationFrame(time => { this.run(time) });
     }
-
     run(time) {
-        let timeLast = time - this.startTime;
+        let timeLast = time - this.startTime; // 아..... this.startTime는 지금 시점의 밀리초 구나.. 고로 0... timeLast은 컨텍스트 읽힌 시점부터는까 10 정도??
         let progress = timeLast / this.speed;
 
         if (progress < 0) progress = 0;
@@ -63,8 +68,6 @@ class Anime {
 
 
 /* 헤더 메뉴 기능 */
-const gnbItem = document.querySelectorAll(".nav__gnb-title");
-const gnbSubitem = document.querySelectorAll(".nav__gnb-depth2-item > a");
 for (const el of gnbItem) {
     el.onfocus = e => {
         e.currentTarget.nextElementSibling.classList.add("on");
@@ -87,12 +90,22 @@ for (const el of gnbSubitem) {
 
 
 /* 헤더 전체메뉴 기능 */
-const totalMenuBtn = document.querySelector(".nav__total-menu");
-const totalMenuContents = document.querySelector(".total-menu");
 totalMenuBtn.addEventListener("click", e => {
+
     e.preventDefault();
     totalMenuBtn.classList.add("on");
     //totalMenuContents.classList.add("on");
+
+    new Anime(totalMenuBtn, {
+        prop: "padding-left",
+        value: 30,
+        duration: 1000,
+        callback: new Anime(totalMenuBtn, {
+            prop: "padding-top",
+            value: 50,
+            duration: 3000,
+        })
+    })
 
 });
 totalMenuBtn.addEventListener("focus", () => {

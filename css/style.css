@@ -119,15 +119,12 @@ header {
       header .nav__total-menu.on::before {
         transform: rotateZ(90deg);
         left: calc(50% - 1px);
-        top: 0px;
-        transform-origin: left;
-        }
+        transform-origin: left; }
       header .nav__total-menu.on span {
         opacity: 0; }
       header .nav__total-menu.on::after {
         bottom: calc(50% - 1px);
-        transform: rotateX(-45deg);
-        }
+        transform: rotateX(-45deg); }
   header .total-menu {
     display: none;
     position: fixed;
