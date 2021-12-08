@@ -15,22 +15,32 @@ a {
 
 /* === reset end ===*/
 header {
-  background: #f0f0f0; }
+  background: #fff;
+  box-shadow: 0px 5px 12px #d0d0d0; }
   header .nav {
-    width: 1200px;
+    width: 1440px;
+    height: 80px;
     margin: 0 auto;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     header .nav__logo {
-      width: 20%;
-      font-size: 37px; }
-    header .nav__gnb {
-      width: calc(80% - 30px);
+      width: 19.1%;
       display: flex;
-      justify-content: space-evenly;
-      align-items: center; }
+      justify-content: flex-end; }
+      header .nav__logo span {
+        display: block;
+        font-size: 20px;
+        line-height: 0.9;
+        font-family: "Dancing Script", cursive;
+        font-variation-settings: "wdth" 700; }
+    header .nav__gnb {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 55.5%;
+      margin-left: 70px;
+      margin-right: 12px; }
       header .nav__gnb-depth1-item {
         position: relative;
         text-align: center;
@@ -44,8 +54,9 @@ header {
         display: inline-block;
         padding: 10px;
         border-radius: 21px;
+        font-size: 14.3px;
         text-align: center;
-        font-weight: bold; }
+        font-weight: 530; }
       header .nav__gnb-depth2 {
         display: none;
         position: absolute;
@@ -84,40 +95,54 @@ header {
           width: 100%;
           transform: scaleX(1);
           transform-origin: left bottom; }
+    header .nav__translate {
+      display: block;
+      padding: 6px 31px;
+      font-size: 15px;
+      border-right: solid 1px #f0f0f0;
+      border-left: solid 1px #f0f0f0; }
+    header .nav__search {
+      font-size: 20px; }
     header .nav__total-menu {
+      box-sizing: content-box;
       position: relative;
-      width: 30px;
-      height: 30px; }
+      margin-right: 17px;
+      width: 22px;
+      height: 17px;
+      padding: 15px 12px;
+      background-color: #f8e71c; }
       header .nav__total-menu::before {
         content: "";
         display: block;
         position: absolute;
-        top: 4px;
-        left: 0;
-        width: 100%;
+        top: 16px;
+        /* left: 50%; */
+        /* transform: translateX(-50%); */
+        width: 21px;
         height: 2px;
-        background: #000;
+        background: #444444;
         transition: 0.7s; }
       header .nav__total-menu span {
         display: block;
         position: absolute;
         top: 50%;
-        width: 100%;
+        width: 21px;
         height: 2px;
         margin: -1px 0 0 0;
-        background: #000;
+        background: #444444;
         transition: 0.7s; }
       header .nav__total-menu::after {
         content: "";
         display: block;
         position: absolute;
-        bottom: 4px;
-        width: 100%;
+        bottom: 16px;
+        width: 21px;
         height: 2px;
-        background: #000;
+        background: #444444;
         transition: 0.7s; }
       header .nav__total-menu.on::before {
         transform: rotateZ(90deg);
+        top: 0px;
         left: calc(50% - 1px);
         transform-origin: left; }
       header .nav__total-menu.on span {
@@ -137,7 +162,7 @@ header {
       justify-content: space-evenly;
       flex-wrap: wrap;
       align-content: space-around;
-      max-width: 1200px;
+      max-width: 1440px;
       height: calc(100vh - 120px);
       margin: 60px auto; }
     header .total-menu * {
@@ -158,5 +183,41 @@ header {
       margin: 0 0 8px 0; }
       header .total-menu__depth2-item > a:hover {
         color: #a4e2ff; }
+
+.swiper {
+  width: 100vw;
+  height: 730px;
+  background-color: #b5dbb5; }
+  .swiper .swiperMoveBtn {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1440px; }
+    .swiper .swiperMoveBtn li {
+      display: flex;
+      width: calc((100% - 153px * 2) / 3);
+      padding: 29px;
+      border-right: solid 1px #eee;
+      background-color: #fff; }
+      .swiper .swiperMoveBtn li img {
+        width: 70px;
+        border-radius: 100%; }
+      .swiper .swiperMoveBtn li div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 0 29px;
+        font-size: 18px;
+        color: #2f2f2f; }
+    .swiper .swiperMoveBtn .swiperMoveBtn--empty {
+      background-color: transparent;
+      border-right: none; }
+    .swiper .swiperMoveBtn li:first-child,
+    .swiper .swiperMoveBtn li:last-child {
+      width: 135px; }
 
 /*# sourceMappingURL=style.css.map */

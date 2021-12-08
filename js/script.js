@@ -4,7 +4,7 @@ const totalMenuBtn = document.querySelector(".nav__total-menu");
 const totalMenuContents = document.querySelector(".total-menu");
 
 
-/* 애니메이션 기본 셋팅 jquery처럼 간편하게 쓸 수 있게 (숫자 형태만 가능)*/
+/* 애니메이션 기본 셋팅 jquery처럼 간편하게 쓸 수 있게 (value 값은 숫자 형태만 가능)*/
 class Anime {
     constructor(selector, option) {
         this.selector = selector;
@@ -35,9 +35,9 @@ class Anime {
         if (this.option.value !== this.currentValue) requestAnimationFrame(time => { this.run(time) });
     }
     run(time) {
-        let timeLast = time - this.startTime; // 아..... this.startTime는 지금 시점의 밀리초 구나.. 고로 0... timeLast은 컨텍스트 읽힌 시점부터는까 10 정도??
-        let progress = timeLast / this.speed;
-
+        let timeLast = time - this.startTime; // 처음 time과 this.startTime는 동일한 밀리초임. time은 run함수 실행 시작 후 경과하는 밀리초의 진행형, this.startTime은 Anime class 실행된 직후의 밀리초.
+        let progress = timeLast / this.speed; 
+ 
         if (progress < 0) progress = 0;
         if (progress > 1) progress = 1;
 
@@ -58,7 +58,7 @@ class Anime {
             this.selector.style[this.option.prop] = result;
         } else if (this.option.prop === "scroll") {
             window.scroll(0, result);
-        } else if (this.isString == "string") {
+        } else if (this.isString == "string") { //34번째줄에서 이미 변환했는데 굳이 또 할필요가??
             this.selector.style[this.option.prop] = result + "%";
         } else {
             this.selector.style[this.option.prop] = result + "px";
@@ -90,11 +90,12 @@ for (const el of gnbSubitem) {
 
 
 /* 헤더 전체메뉴 기능 */
+//클릭 후 전체버튼에 class on걸어서 애니메이션 진행 진행 끝나면 totalMenuContents에 on 건 후 해당 클래스에 원 배경 애니메이션 걸기
 totalMenuBtn.addEventListener("click", e => {
 
     e.preventDefault();
     totalMenuBtn.classList.add("on");
-    //totalMenuContents.classList.add("on");
+    totalMenuContents.classList.add("on");
 
     new Anime(totalMenuBtn, {
         prop: "padding-left",
@@ -112,6 +113,17 @@ totalMenuBtn.addEventListener("focus", () => {
     totalMenuBtn.classList.add("on");
     //totalMenuContents.classList.add("on");
 });
+
+
+const swiper = new Swiper('.swiper', {
+    //direction: 'vertical',
+    loop: true,
+
+    navigation: {
+      nextEl: '.custom-swiper-button-prev',
+      prevEl: '.custom-swiper-button-next',
+    }
+  });
 
 
 
