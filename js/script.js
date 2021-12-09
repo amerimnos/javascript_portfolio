@@ -120,8 +120,8 @@ const swiper = new Swiper('.swiper', {
     loop: true,
 
     navigation: {
-      nextEl: '.custom-swiper-button-prev',
-      prevEl: '.custom-swiper-button-next',
+      nextEl: '.prevBtn',
+      prevEl: '.nextBtn',
     }
   });
 
