@@ -90,7 +90,6 @@ for (const el of gnbSubitem) {
 
 
 /* 헤더 전체메뉴 기능 */
-//클릭 후 전체버튼에 class on걸어서 애니메이션 진행 진행 끝나면 totalMenuContents에 on 건 후 해당 클래스에 원 배경 애니메이션 걸기
 totalMenuBtn.addEventListener("click", e => {
 
     e.preventDefault();
