@@ -4,7 +4,7 @@ const totalMenuBtn = document.querySelector(".nav__total-menu");
 const totalMenuContents = document.querySelector(".total-menu");
 
 
-/* 애니메이션 기본 셋팅 jquery처럼 간편하게 쓸 수 있게 (value 값은 숫자 형태만 가능)*/
+//애니메이션 기본 셋팅 jquery처럼 간편하게 쓸 수 있게 (value 값은 숫자 형태만 가능)
 class Anime {
     constructor(selector, option) {
         this.selector = selector;
@@ -36,8 +36,8 @@ class Anime {
     }
     run(time) {
         let timeLast = time - this.startTime; // 처음 time과 this.startTime는 동일한 밀리초임. time은 run함수 실행 시작 후 경과하는 밀리초의 진행형, this.startTime은 Anime class 실행된 직후의 밀리초.
-        let progress = timeLast / this.speed; 
- 
+        let progress = timeLast / this.speed;
+
         if (progress < 0) progress = 0;
         if (progress > 1) progress = 1;
 
@@ -67,7 +67,7 @@ class Anime {
 }
 
 
-/* 헤더 메뉴 기능 */
+//헤더 메뉴 기능
 for (const el of gnbItem) {
     el.onfocus = e => {
         e.currentTarget.nextElementSibling.classList.add("on");
@@ -89,7 +89,7 @@ for (const el of gnbSubitem) {
 
 
 
-/* 헤더 전체메뉴 기능 */
+//헤더 전체메뉴 기능
 totalMenuBtn.addEventListener("click", e => {
 
     e.preventDefault();
@@ -114,15 +114,15 @@ totalMenuBtn.addEventListener("focus", () => {
 });
 
 
-const swiper = new Swiper('.swiper', {
+/* const swiper = new Swiper('.swiper', {
     //direction: 'vertical',
     loop: true,
 
     navigation: {
-      nextEl: '.prevBtn',
-      prevEl: '.nextBtn',
+        nextEl: '.prevBtn',
+        prevEl: '.nextBtn',
     }
-  });
+}); */
 
 
 
