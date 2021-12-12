@@ -14,6 +14,11 @@ a {
   color: inherit; }
 
 /* === reset end ===*/
+/* === common start ===*/
+.pointColor {
+  color: #f8e71c; }
+
+/* === common end ===*/
 header {
   position: sticky;
   top: 0;
@@ -674,6 +679,79 @@ header {
     color: gray;
     font-weight: 300;
     line-height: 1.6; }
+
+.aboutConts2 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #f8f8f8; }
+  .aboutConts2 .inner {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 50px 40px 30px 20px; }
+  .aboutConts2 .conts1 {
+    display: flex;
+    width: calc(100% / 3 * 2); }
+    .aboutConts2 .conts1 h1 {
+      font-size: 30px; }
+    .aboutConts2 .conts1 div {
+      display: flex;
+      align-items: center;
+      text-align: right;
+      font-weight: 600px;
+      letter-spacing: 1.5px; }
+      .aboutConts2 .conts1 div::before {
+        content: "";
+        display: block;
+        width: 25%;
+        height: 1.5px;
+        background-color: #000; }
+  .aboutConts2 .conts3 {
+    width: calc(100% / 3 * 2);
+    line-height: 1.6;
+    color: #656565; }
+  .aboutConts2 .conts4 {
+    width: calc(100% / 3); }
+  .aboutConts2 .imgClip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/mainSlide02.png);
+    background-size: cover; }
+    .aboutConts2 .imgClip::before {
+      position: absolute;
+      width: 92%;
+      height: 92%;
+      margin: 4%;
+      background-color: white;
+      content: '';
+      display: block; }
+    .aboutConts2 .imgClip div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding-top: 66px;
+      padding-left: 50px;
+      font-size: 94px;
+      font-weight: 800;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: url(../img/mainSlide02.png);
+      background-size: cover;
+      color: transparent; }
+    .aboutConts2 .imgClip span {
+      color: #585858; }
+  .aboutConts2 .conts5 {
+    width: calc(100% / 3 * 2);
+    display: flex;
+    justify-content: space-evenly; }
+    .aboutConts2 .conts5 div {
+      font-size: 20px;
+      font-weight: 600; }
+      .aboutConts2 .conts5 div span {
+        display: inline-block;
+        padding-top: 25px;
+        color: #979797; }
 
 /* === about end ===*/
 .footer {
