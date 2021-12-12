@@ -52,7 +52,7 @@ header {
 
 		&__gnb {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			align-items: center;
 			width: 55.5%;
 			margin-left: 70px;
@@ -777,7 +777,7 @@ header {
 		padding: 100px 0 40px;
 	}
 	&__menu {
-		width: calc(100% / 6);
+		width: calc(100% / 5);
 	}
 	&__menu-tit {
 		color: #e1e1e1;

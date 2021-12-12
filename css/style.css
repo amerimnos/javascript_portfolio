@@ -39,7 +39,7 @@ header {
         font-weight: 700; }
     header .nav__gnb {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       width: 55.5%;
       margin-left: 70px;
@@ -596,7 +596,7 @@ header {
     margin: 0 auto;
     padding: 100px 0 40px; }
   .footer__menu {
-    width: calc(100% / 6); }
+    width: calc(100% / 5); }
   .footer__menu-tit {
     color: #e1e1e1;
     margin-bottom: 42px; }
