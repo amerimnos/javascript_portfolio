@@ -762,8 +762,7 @@ header {
 .aboutConts1 {
 	display: flex;
 	width: 1200px;
-	margin: 50px auto;
-	padding-bottom: 46px;
+	margin: 100px auto;
 	.leftConts {
 		position: relative;
 		width: 50%;
@@ -873,13 +872,11 @@ header {
 
 .aboutConts2 {
 	width: 100%;
-	padding: 50px 0;
 	background-color: #f8f8f8;
 	.inner {
-		width: 1200px;
-		height: 700px;
-		margin: 0 auto;
-		padding: 50px 13px 30px 20px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 13px;
 	}
 	.item1 {
 		display: flex;
@@ -921,6 +918,7 @@ header {
 		.number {
 			width: 69%;
 			display: flex;
+			margin-bottom: 31px;
 			li {
 				width: 100%;
 				display: flex;
@@ -937,13 +935,13 @@ header {
 			}
 		}
 		.imgClip {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    width: 23%;
-    background-image: url(../img/mainSlide01.png);
-    background-size: cover;
-    background-position: 43%;
+			position: absolute;
+			top: 10px;
+			right: 0;
+			width: 23%;
+			background-image: url(../img/mainSlide01.png);
+			background-size: cover;
+			background-position: 43%;
 			&::before {
 				position: absolute;
 				width: calc(100% - 26px);
@@ -966,17 +964,17 @@ header {
 				background-clip: text;
 				background-image: url(../img/mainSlide01.png);
 				background-size: cover;
-                background-position: 43%;
+				background-position: 43%;
 				color: transparent;
 			}
 			span {
-    position: relative;
-    display: inline-block;
-    margin-top: 100%;
-    padding: 0 20% 15% 16%;
-    font-size: 15px;
-    font-weight: 700;
-    color: #8b8b8b;
+				position: relative;
+				display: inline-block;
+				margin-top: 100%;
+				padding: 0 20% 15% 16%;
+				font-size: 15px;
+				font-weight: 700;
+				color: #8b8b8b;
 			}
 		}
 		&::after {
@@ -986,7 +984,117 @@ header {
 		}
 	}
 }
+.aboutConts3 {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 100px 15px;
+	.tit {
+		width: 60%;
+		margin: 0 auto;
+		padding-bottom: 90px;
+		text-align: center;
+		font-size: 53px;
+		font-weight: 400;
+		font-family: "Lora", serif;
+	}
+	.itemWrap {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		height: 770px;
+		li:nth-child(5) {
+			padding-top: 40px;
+		}
+	}
+	.item1 {
+		width: 27%;
+		div {
+			padding: 80px 0 30px;
+			font-size: 13px;
+			color: #969696;
+		}
+		p {
+			line-height: 1.5;
+		}
+	}
 
+	.imgWrap {
+		width: 46%;
+		overflow: hidden;
+		text-align: center;
+		z-index: 1;
+		img {
+			width: 100%;
+			object-fit: cover;
+			padding: 40px;
+			border: solid 1px #d9d9d9;
+			border-radius: 1000px;
+		}
+	}
+	.item2 {
+		width: 27%;
+		text-align: right;
+		p {
+			margin-left: 70%;
+			padding: 50px 0 20px;
+			color: #969696;
+			font-size: 11px;
+			line-height: 1.8;
+		}
+		div {
+			font-size: 43px;
+			font-weight: 400;
+			font-family: "Lora";
+		}
+	}
+	.bgIcon1 {
+		position: absolute;
+		right: 12%;
+		bottom: -1%;
+		i {
+			font-size: 358px;
+			background: linear-gradient(
+				to right bottom,
+				#dcdcdc4a,
+				50%,
+				transparent 90%
+			);
+			color: transparent;
+			-webkit-background-clip: text;
+		}
+	}
+	.bgIcon2 {
+		position: absolute;
+		left: 22%;
+		bottom: 55%;
+		z-index: 1;
+		i {
+			font-size: 121px;
+			background: linear-gradient(
+				to right,
+				#ededed,
+				50%,
+				transparent 90%
+			);
+			color: transparent;
+			-webkit-background-clip: text;
+		}
+	}
+	.sponsor {
+		width: 100%;
+		display: flex;
+		padding: 80px 100px 0;
+		li {
+			width: 25%;
+			text-align: center;
+		}
+		i {
+			font-size: 50px;
+			color: gray;
+		}
+	}
+}
 /* === about end ===*/
 
 .footer {
