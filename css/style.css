@@ -688,70 +688,97 @@ header {
     width: 1200px;
     height: 700px;
     margin: 0 auto;
-    padding: 50px 40px 30px 20px; }
-  .aboutConts2 .conts1 {
+    padding: 50px 13px 30px 20px; }
+  .aboutConts2 .item1 {
     display: flex;
-    width: calc(100% / 3 * 2); }
-    .aboutConts2 .conts1 h1 {
-      font-size: 30px; }
-    .aboutConts2 .conts1 div {
+    width: 100%;
+    justify-content: space-between; }
+    .aboutConts2 .item1 h1 {
+      width: 59%;
+      margin-bottom: 67px;
+      font-size: 36.8px;
+      letter-spacing: 0.1px;
+      line-height: 1; }
+    .aboutConts2 .item1 div {
+      width: 36%;
       display: flex;
+      font-weight: 600;
+      letter-spacing: 5.4px;
       align-items: center;
-      text-align: right;
-      font-weight: 600px;
-      letter-spacing: 1.5px; }
-      .aboutConts2 .conts1 div::before {
+      justify-content: center;
+      margin-bottom: auto; }
+      .aboutConts2 .item1 div::before {
         content: "";
         display: block;
-        width: 25%;
+        width: 32%;
         height: 1.5px;
+        margin-right: auto;
         background-color: #000; }
-  .aboutConts2 .conts3 {
-    width: calc(100% / 3 * 2);
-    line-height: 1.6;
-    color: #656565; }
-  .aboutConts2 .conts4 {
-    width: calc(100% / 3); }
-  .aboutConts2 .imgClip {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/mainSlide02.png);
-    background-size: cover; }
-    .aboutConts2 .imgClip::before {
-      position: absolute;
-      width: 92%;
-      height: 92%;
-      margin: 4%;
-      background-color: white;
-      content: '';
-      display: block; }
-    .aboutConts2 .imgClip div {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      padding-top: 66px;
-      padding-left: 50px;
-      font-size: 94px;
-      font-weight: 800;
-      -webkit-background-clip: text;
-      background-clip: text;
-      background-image: url(../img/mainSlide02.png);
-      background-size: cover;
-      color: transparent; }
-    .aboutConts2 .imgClip span {
-      color: #585858; }
-  .aboutConts2 .conts5 {
-    width: calc(100% / 3 * 2);
-    display: flex;
-    justify-content: space-evenly; }
-    .aboutConts2 .conts5 div {
-      font-size: 20px;
-      font-weight: 600; }
-      .aboutConts2 .conts5 div span {
-        display: inline-block;
-        padding-top: 25px;
+  .aboutConts2 .item2 {
+    position: relative; }
+    .aboutConts2 .item2 .txt {
+      width: 44%;
+      margin-bottom: 150px;
+      line-height: 1.6;
+      color: #656565; }
+    .aboutConts2 .item2 .number {
+      width: 69%;
+      display: flex; }
+      .aboutConts2 .item2 .number li {
+        width: 100%;
+        display: flex;
+        font-size: 61px;
+        font-weight: 400;
+        letter-spacing: -4.5px;
+        flex-direction: column; }
+      .aboutConts2 .item2 .number span {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
         color: #979797; }
+    .aboutConts2 .item2 .imgClip {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      width: 23%;
+      background-image: url(../img/mainSlide01.png);
+      background-size: cover;
+      background-position: 43%; }
+      .aboutConts2 .item2 .imgClip::before {
+        position: absolute;
+        width: calc(100% - 26px);
+        height: calc(100% - 26px);
+        margin: 13px;
+        background-color: white;
+        content: "";
+        display: block; }
+      .aboutConts2 .item2 .imgClip div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-top: 74px;
+        padding-left: 24px;
+        font-size: 150px;
+        font-weight: 500;
+        letter-spacing: -21px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: url(../img/mainSlide01.png);
+        background-size: cover;
+        background-position: 43%;
+        color: transparent; }
+      .aboutConts2 .item2 .imgClip span {
+        position: relative;
+        display: inline-block;
+        margin-top: 100%;
+        padding: 0 20% 15% 16%;
+        font-size: 15px;
+        font-weight: 700;
+        color: #8b8b8b; }
+    .aboutConts2 .item2::after {
+      content: "";
+      display: block;
+      clear: both; }
 
 /* === about end ===*/
 .footer {
