@@ -254,10 +254,13 @@ header {
 	height: 730px;
 }
 .main-slideTxt {
-	position: absolute;
-	top: 23%;
-	left: 134px;
-	z-index: 1;
+    position: absolute;
+    width: 1200px;
+    margin: 0 auto;
+    top: 26%;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 2;
 	&__tit {
 		margin-bottom: 23px;
 		font-size: 52px;
@@ -1293,7 +1296,10 @@ header {
 	}
 
 	.main-slideTxt {
-		top: 13%;
+    width: 100%;
+    top: 13%;
+    left: 9%;
+    margin-left: initial;
 		&__tit {
 			font-size: 37px;
 		}
