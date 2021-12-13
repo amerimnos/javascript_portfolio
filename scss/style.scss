@@ -1206,42 +1206,69 @@ header {
 /* === community start ===*/
 .commuConts1 {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
-    &::before{
-        content: '';
-        position: absolute;
-        display: block;
-        width: 100vw;
-        height: 100vh;
-        background: url(../img/commuConts1_bg1.png) no-repeat;
-        background-position: left;
-        background-size: cover;
-    }
-	.blur {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 48vw;
-    height: 100vh;
-    filter: blur(20px);
-    background: url(../img/commuConts1_bg1.png) no-repeat;
-    background-position: left;
-    background-size: cover;
-		
+	width: calc(100vw - (100vw - 100%));
+	height: calc(100vh - 80px);
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: calc(100vw - (100vw - 100%));
+		height: calc(100vh - 80px);
+		background: url(../img/commuConts1_bg3.jpg) no-repeat;
+		background-position: left;
+		background-size: cover;
 	}
-    .txt {
-    position: relative;
-    padding: 372px 0 0 calc(48vw - 482px);
-    font-size: 138px;
-    font-weight: 800;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: url(../img/mainSlide01.png);
-    color: transparent;
-    background-size: cover;
-    z-index: 0;
-    }
+	.blur {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 37vw;
+		height: calc(100vh - 80px);
+		backdrop-filter: blur(24px);
+	}
+	.txt {
+		position: absolute;
+		top: calc(50% - 80px);
+		left: calc(37vw - 505px);
+		font-size: 138px;
+		font-weight: 800;
+		-webkit-background-clip: text;
+		background-clip: text;
+		background-image: url(../img/commu_txtbg.png);
+		color: transparent;
+		background-size: cover;
+	}
+	h2 {
+		position: absolute;
+		top: calc(50% - 180px);
+		left: 37.3vw;
+		font-size: 138px;
+		font-weight: 800;
+		color: #fff;
+	}
+	.subTxt {
+		position: absolute;
+		right: 10%;
+		bottom: 8%;
+		z-index: 1;
+		width: 560px;
+		border: solid 2px #fff;
+		padding: 40px;
+		color: #fff;
+		h3 {
+			margin-bottom: 50px;
+			font-size: 46px;
+			color: #fff;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.6;
+			font-weight: 400;
+			font-family: "Lora";
+		}
+	}
 }
 /* === community end ===*/
 
