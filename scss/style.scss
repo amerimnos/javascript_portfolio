@@ -142,7 +142,7 @@ header {
 			border-right: solid 1px #f0f0f0;
 			border-left: solid 1px #f0f0f0;
 		}
-		&__search {
+		&__login {
 			font-size: 20px;
 		}
 
@@ -254,13 +254,13 @@ header {
 	height: 730px;
 }
 .main-slideTxt {
-    position: absolute;
-    width: 1200px;
-    margin: 0 auto;
-    top: 26%;
-    left: 50%;
-    margin-left: -600px;
-    z-index: 2;
+	position: absolute;
+	width: 1200px;
+	margin: 0 auto;
+	top: 26%;
+	left: 50%;
+	margin-left: -600px;
+	z-index: 2;
 	&__tit {
 		margin-bottom: 23px;
 		font-size: 52px;
@@ -1203,6 +1203,48 @@ header {
 }
 /* === about end ===*/
 
+/* === community start ===*/
+.commuConts1 {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/commuConts1_bg1.png) no-repeat;
+        background-position: left;
+        background-size: cover;
+    }
+	.blur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48vw;
+    height: 100vh;
+    filter: blur(20px);
+    background: url(../img/commuConts1_bg1.png) no-repeat;
+    background-position: left;
+    background-size: cover;
+		
+	}
+    .txt {
+    position: relative;
+    padding: 372px 0 0 calc(48vw - 482px);
+    font-size: 138px;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url(../img/mainSlide01.png);
+    color: transparent;
+    background-size: cover;
+    z-index: 0;
+    }
+}
+/* === community end ===*/
+
 .footer {
 	position: relative;
 	width: 100%;
@@ -1296,10 +1338,10 @@ header {
 	}
 
 	.main-slideTxt {
-    width: 100%;
-    top: 13%;
-    left: 9%;
-    margin-left: initial;
+		width: 100%;
+		top: 13%;
+		left: 9%;
+		margin-left: initial;
 		&__tit {
 			font-size: 37px;
 		}
@@ -1771,7 +1813,7 @@ header {
 				border: solid 1px #c4c4c4;
 				border-radius: 7px;
 			}
-			&__search {
+			&__login {
 				order: 3;
 				margin: 0 20px 0 0;
 			}
@@ -2067,7 +2109,7 @@ header {
 			}
 			&__translate {
 			}
-			&__search {
+			&__login {
 			}
 			&__total-menu {
 			}
@@ -2364,7 +2406,7 @@ header {
 			&__translate {
 				display: none;
 			}
-			&__search {
+			&__login {
 				display: none;
 			}
 			&__total-menu {
