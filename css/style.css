@@ -799,7 +799,8 @@ header {
     .aboutConts3 .itemWrap li:nth-child(5) {
       padding-top: 40px; }
   .aboutConts3 .item1 {
-    width: 27%; }
+    width: 27%;
+    padding-right: 70px; }
     .aboutConts3 .item1 div {
       padding: 80px 0 30px;
       font-size: 13px;
@@ -859,6 +860,92 @@ header {
     .aboutConts3 .sponsor i {
       font-size: 50px;
       color: gray; }
+
+.aboutConts4 {
+  padding: 100px 0 0;
+  background-color: #f8f8f8; }
+  .aboutConts4 .inner {
+    width: 1200px;
+    margin: 0 auto; }
+  .aboutConts4 .titIcon {
+    text-align: center;
+    margin-bottom: 30px; }
+    .aboutConts4 .titIcon i {
+      display: inline-block;
+      padding: 26px;
+      border-radius: 50%;
+      font-size: 32px;
+      background: #f4f0fe;
+      color: #9d7ff4; }
+  .aboutConts4 h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #1f1f1f; }
+  .aboutConts4 .subConts {
+    width: 60%;
+    margin: 0 auto 45px;
+    text-align: center;
+    color: gray;
+    line-height: 1.8; }
+  .aboutConts4 .tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 170px; }
+    .aboutConts4 .tab li {
+      width: 19%;
+      margin-right: 0.7%;
+      padding: 2% 0;
+      text-align: center;
+      color: #5e2ced;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background-color: #f4f0fe;
+      cursor: pointer; }
+    .aboutConts4 .tab li:last-child {
+      margin-right: 0; }
+  .aboutConts4 .list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .aboutConts4 .item {
+    width: calc(25% - 30px);
+    margin-bottom: 12.4%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 9px 20px 7px #d8d8d8; }
+    .aboutConts4 .item img {
+      display: inline-block;
+      object-fit: cover;
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      margin-top: -60px;
+      margin-bottom: 50px;
+      padding: 7px;
+      box-shadow: 0px 8px 9px #e6e6e6;
+      background: linear-gradient(180deg, #ebe4fd, transparent); }
+    .aboutConts4 .item .name {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: #1f1f1f; }
+    .aboutConts4 .item p {
+      color: #79858f;
+      margin-bottom: 40px; }
+    .aboutConts4 .item .sns {
+      width: 55%;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto 30px; }
+      .aboutConts4 .item .sns i {
+        padding: 10px;
+        border-radius: 10px;
+        color: #5e2ced;
+        background: #f4f0fe; }
 
 /* === about end ===*/
 .footer {
