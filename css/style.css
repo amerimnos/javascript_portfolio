@@ -1012,7 +1012,7 @@ header {
       color: #ffffffba;
       font-weight: 600;
       text-transform: uppercase;
-      font-family: 'Dancing Script'; }
+      font-family: "Dancing Script"; }
     .commuConts1 .txtBox p {
       font-size: 16px;
       line-height: 1.6;
@@ -1122,13 +1122,15 @@ header {
 
 .commuConts3 {
   width: 100%;
+  margin: 0 auto 80px;
+  padding: 165px 0;
   background: url(../img/commuConts1_bg4.jpg) no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  clip-path: path("M.5,881.44v-807c381-153,767.91-.79,1271-25,374-18,541-64,899-44,310.62,17.35,390,77,390,77v803s-245-64.56-500-69c-287-5-569,65-781,65-197,0-448.23-59.81-663-59C396.5,823.27.5,881.44.5,881.44Z"); }
   .commuConts3 .inner {
     width: 1200px;
-    margin: 0 auto;
-    padding: 80px 0; }
+    margin: 0 auto; }
   .commuConts3 h1 {
     margin-bottom: 30px;
     font-size: 31px;
