@@ -1222,6 +1222,7 @@ header {
 		background: url(../img/commuConts1_bg3.jpg) no-repeat;
 		background-position: left;
 		background-size: cover;
+		background-attachment: fixed;
 	}
 	.blur {
 		position: absolute;
@@ -1252,26 +1253,29 @@ header {
 		color: #fff;
 	}
 	.txtBox {
-		position: absolute;
-		right: 10%;
-		bottom: 8%;
-		z-index: 1;
-		width: 560px;
-		border: solid 2px #fff;
-		padding: 40px;
-		color: #fff;
+    position: absolute;
+    right: 10%;
+    bottom: 8%;
+    z-index: 1;
+    width: 560px;
+    border: solid 3px #ffffff99;
+    border-radius: 60px 0 60px 0;
+    box-shadow: 12px 13px 0px #ffffff2b;
+    padding: 40px;
 		h3 {
-			margin-bottom: 50px;
-			font-size: 46px;
-			color: #fff;
-			font-weight: 600;
-			text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #ffffffba;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Dancing Script';
 		}
 		p {
 			font-size: 16px;
 			line-height: 1.6;
 			font-weight: 400;
 			font-family: "Lora";
+			color:#ffffffb3;
 		}
 	}
 }
@@ -1395,6 +1399,86 @@ header {
 		.num {
 			padding: 10px 14px;
 			border-radius: 8px;
+		}
+	}
+}
+.commuConts3 {
+	width: 100%;
+	background: url(../img/commuConts1_bg4.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	.inner {
+		width: 1200px;
+		margin: 0 auto;
+		padding: 80px 0;
+	}
+	h1 {
+		margin-bottom: 30px;
+		font-size: 31px;
+		color: #c0dcdf;
+	}
+	li {
+		padding: 20px;
+		background-color: white;
+		display: flex;
+	}
+    li:nth-child(2n){
+        margin-bottom: 10px;
+    }
+	.quest {
+		border-radius: 8px 8px 0 0;
+		justify-content: space-between;
+		span {
+			padding: 0 20px;
+			font-weight: 800;
+			font-size: 20px;
+			border-right: 1px solid #78a5ab;
+			color: #4b747a;
+		}
+		div {
+			margin-right: auto;
+			padding-left: 20px;
+		}
+		p {
+			display: flex;
+			align-items: center;
+		}
+		p::before {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 1px;
+			background: #000;
+			transition: 0.5s;
+		}
+		p::after {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 1px;
+			margin-left: -20px;
+			background: #000000;
+			transition: 0.5s;
+			transform: rotateZ(90deg);
+		}
+		&.on p::after {
+			transform: rotateZ(0deg);
+		}
+	}
+	.answer {
+		justify-content: space-between;
+		border-top: dotted 2px #c4c4c4;
+        border-radius: 0 0 8px 8px;
+		span {
+			padding: 0 20px;
+			font-weight: 800;
+			font-size: 20px;
+			border-right: 1px solid #78a5ab;
+			color: #4b747a;
+		}
+		div {
+			margin-right: auto;
+			padding-left: 20px;
 		}
 	}
 }
