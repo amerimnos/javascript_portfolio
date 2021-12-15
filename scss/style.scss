@@ -1737,8 +1737,10 @@ header {
 }
 
 .joinConts2 {
-	width: 1200px;
-	margin: 100px auto;
+    display: flex;
+    width: 1200px;
+    margin: 100px auto;
+    justify-content: center;
 
 	#form {
 		width: 70%;
@@ -1748,6 +1750,15 @@ header {
 		font-size: 14px;
 		border-radius: 50px;
 		box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #ffffff;
+
+		input[type="submit"],
+		input[type="reset"] {
+			position: absolute;
+			left: -9999px;
+			opacity: 0;
+			visibility: hidden;
+		}
+
 		.tit {
 			font-size: 18px;
 			font-weight: 520;
@@ -1765,7 +1776,7 @@ header {
 				color: rgb(185, 185, 185);
 			}
 			td {
-				padding: 8px;
+				padding: 13px 8px;
 				border-bottom: solid 1px #cccccc;
 				color: #9baacf;
 			}
@@ -1782,7 +1793,7 @@ header {
 			.sponsorSubContents {
 				display: inline-block;
 				padding-left: 20px;
-				color: #9baacf;
+				color: #5b0eeb;
 			}
 			.support-btn {
 				vertical-align: top;
@@ -1823,14 +1834,6 @@ header {
 				box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
 					inset -0.2rem -0.2rem 0.5rem #fff;
 				background: none;
-
-				&[type="submit"],
-				&[type="reset"] {
-					position: absolute;
-					left: -9999px;
-					opacity: 0;
-					visibility: hidden;
-				}
 			}
 			.width-full {
 				width: 100%;
@@ -2034,8 +2037,11 @@ header {
 		}
 
 		.payinfo {
-			margin: 37px;
+			margin: 61px 37px 49px;
 			padding: 15px;
+			color: #5b0eeb;
+			border-radius: 1rem;
+			box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff;
 
 			/* Neumorphic 스타일 적용전
         border: solid 1px #dbdbdb;
@@ -2044,10 +2050,7 @@ header {
         background-image: repeating-linear-gradient(45deg,
                 transparent,
                 rgba(0, 0, 0, 0.05) 4px); */
-			color: #5b0eeb;
-			border-radius: 1rem;
-			box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
-				inset -0.2rem -0.2rem 0.5rem #fff;
+
 		}
 
 		.btn-wrap {

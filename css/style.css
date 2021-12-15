@@ -1399,8 +1399,7 @@ header {
   display: flex;
   width: 1200px;
   margin: 100px auto;
-  justify-content: center;
-  }
+  justify-content: center; }
   .joinConts2 #form {
     width: 70%;
     padding: 40px;
@@ -1409,6 +1408,12 @@ header {
     font-size: 14px;
     border-radius: 50px;
     box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #ffffff; }
+    .joinConts2 #form input[type="submit"],
+    .joinConts2 #form input[type="reset"] {
+      position: absolute;
+      left: -9999px;
+      opacity: 0;
+      visibility: hidden; }
     .joinConts2 #form .tit {
       font-size: 18px;
       font-weight: 520;
@@ -1423,7 +1428,7 @@ header {
       .joinConts2 #form .form-table ::placeholder {
         color: #b9b9b9; }
       .joinConts2 #form .form-table td {
-        padding: 8px;
+        padding: 13px 8px;
         border-bottom: solid 1px #cccccc;
         color: #9baacf; }
       .joinConts2 #form .form-table td:nth-child(1),
@@ -1436,7 +1441,7 @@ header {
       .joinConts2 #form .form-table .sponsorSubContents {
         display: inline-block;
         padding-left: 20px;
-        color: #9baacf; }
+        color: #5b0eeb; }
       .joinConts2 #form .form-table .support-btn {
         vertical-align: top;
         padding: 5px 11px;
@@ -1471,11 +1476,6 @@ header {
         width: 100%;
         box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff;
         background: none; }
-        .joinConts2 #form .form-table input[type="submit"], .joinConts2 #form .form-table input[type="reset"] {
-          position: absolute;
-          left: -9999px;
-          opacity: 0;
-          visibility: hidden; }
       .joinConts2 #form .form-table .width-full {
         width: 100%;
         margin: 10px 0px 0px 0px; }
@@ -1627,18 +1627,18 @@ header {
       .joinConts2 #form .form-table .interval {
         margin-right: 29px; }
     .joinConts2 #form .payinfo {
-      margin: 37px;
+      margin: 61px 37px 49px;
       padding: 15px;
+      color: #5b0eeb;
+      border-radius: 1rem;
+      box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff;
       			/* Neumorphic 스타일 적용전
               border: solid 1px #dbdbdb;
               background-color: #f9f9f9;
               background-color: rgb(255, 255, 255);
               background-image: repeating-linear-gradient(45deg,
                       transparent,
-                      rgba(0, 0, 0, 0.05) 4px); */
-      color: #5b0eeb;
-      border-radius: 1rem;
-      box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff; }
+                      rgba(0, 0, 0, 0.05) 4px); */ }
     .joinConts2 #form .btn-wrap {
       display: flex;
       width: 100%;
