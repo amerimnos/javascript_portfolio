@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/* === Neumorphic style start === */
+:root {
+  --circleWavePrimary-light: #8abdff;
+  --circleWavePrimary: #6d5dfc;
+  --circleWavePrimary-dark: #5b0eeb;
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf; }
+
+/* === Neumorphic style end === */
 /* === reset start ===*/
 * {
   margin: 0;
@@ -20,6 +32,29 @@ caption {
   opacity: 0; }
 
 /* === reset end ===*/
+/* === animation start === */
+@keyframes circleWave {
+  0% {
+    transform: scale(0.8);
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(2);
+    opacity: 0; } }
+@keyframes dothaBottomCheck {
+  0% {
+    height: 0; }
+  100% {
+    height: 13px; } }
+@keyframes dothaTopCheck {
+  0% {
+    height: 0; }
+  50% {
+    height: 0; }
+  100% {
+    height: 25px; } }
+/* === animation end === */
 /* === common start ===*/
 .pointColor {
   color: #f8e71c; }
@@ -48,6 +83,40 @@ header {
         line-height: 0.9;
         font-family: "Dancing Script", cursive;
         font-weight: 700; }
+    header .nav .circleWave {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      justify-items: center; }
+      header .nav .circleWave__btn {
+        display: flex;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        z-index: 300;
+        background: var(--greyLight-1);
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+        cursor: pointer;
+        position: relative;
+        justify-content: center;
+        align-items: center; }
+      header .nav .circleWave__back-1, header .nav .circleWave__back-2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        filter: blur(1px);
+        z-index: 100; }
+      header .nav .circleWave__back-1 {
+        box-shadow: 0.4rem 0.4rem 0.8rem var(--greyLight-2), -0.4rem -0.4rem 0.8rem var(--white);
+        background: linear-gradient(to bottom right, var(--greyLight-2) 0%, var(--white) 100%);
+        animation: circleWave 4s linear infinite; }
+      header .nav .circleWave__back-2 {
+        box-shadow: 0.4rem 0.4rem 0.8rem var(--greyLight-2), -0.4rem -0.4rem 0.8rem var(--white);
+        animation: circleWave 4s linear 2s infinite; }
     header .nav__gnb {
       display: flex;
       justify-content: space-evenly;
@@ -1697,18 +1766,6 @@ header {
         opacity: 1;
         transition: all 0.8s cubic-bezier(0.48, 0, 0.12, 1); }
 
-@keyframes dothaBottomCheck {
-  0% {
-    height: 0; }
-  100% {
-    height: 13px; } }
-@keyframes dothaTopCheck {
-  0% {
-    height: 0; }
-  50% {
-    height: 0; }
-  100% {
-    height: 25px; } }
 /* === join page end ===*/
 .footer {
   position: relative;
