@@ -1414,10 +1414,12 @@ header {
       left: -9999px;
       opacity: 0;
       visibility: hidden; }
+    .joinConts2 #form > div:first-child {
+      padding-top: 20px; }
     .joinConts2 #form .tit {
       font-size: 18px;
       font-weight: 520;
-      padding: 30px 0 10px 0;
+      padding: 50px 0 10px 0;
       color: #5b0eeb; }
       .joinConts2 #form .tit .material-icons {
         vertical-align: bottom; }
@@ -1516,8 +1518,10 @@ header {
         box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff;
         background: none; }
       .joinConts2 #form .form-table .customSelectWrap {
+        display: flex;
         position: relative;
-        width: 36%; }
+        width: 36%;
+        align-content: center; }
         .joinConts2 #form .form-table .customSelectWrap select {
           background-color: #d5d0ff;
           color: #5b0eeb;
@@ -1529,12 +1533,8 @@ header {
           appearance: button;
           outline: none; }
         .joinConts2 #form .form-table .customSelectWrap i {
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 20%;
-          min-width: 30px;
-          height: 100%;
+          margin-left: -40px;
+          width: 40px;
           text-align: center;
           font-size: 23px;
           line-height: 40px;
@@ -1556,8 +1556,8 @@ header {
           height: 56px;
           animation: dothaTopCheck 0.4s ease 0s forwards; }
       .joinConts2 #form .form-table .support-check-box {
-        height: 25px;
-        width: 25px;
+        height: 22px;
+        width: 22px;
         background-color: transparent;
         border: 2px solid #9baacf;
         border-radius: 3px;

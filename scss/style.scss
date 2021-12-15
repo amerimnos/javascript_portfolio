@@ -1758,11 +1758,14 @@ header {
 			opacity: 0;
 			visibility: hidden;
 		}
+        > div:first-child {
+            padding-top: 20px;
+        }
 
 		.tit {
 			font-size: 18px;
 			font-weight: 520;
-			padding: 30px 0 10px 0;
+			padding: 50px 0 10px 0;
 			color: #5b0eeb;
 			.material-icons {
 				vertical-align: bottom;
@@ -1883,8 +1886,10 @@ header {
 			}
 
 			.customSelectWrap {
-				position: relative;
-				width: 36%;
+    display: flex;
+    position: relative;
+    width: 36%;
+    align-content: center;
 
 				select {
 					background-color: #d5d0ff;
@@ -1898,19 +1903,15 @@ header {
 					outline: none;
 				}
 				i {
-					position: absolute;
-					top: 0;
-					right: 0;
-					width: 20%;
-					min-width: 30px;
-					height: 100%;
-					text-align: center;
-					font-size: 23px;
-					line-height: 40px;
-					color: rgb(255, 255, 255);
-					background-color: #6d5dfc;
-					pointer-events: none;
-					transition: all 0.4s;
+    margin-left: -40px;
+    width: 40px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 40px;
+    color: white;
+    background-color: #6d5dfc;
+    pointer-events: none;
+    transition: all 0.4s;
 				}
 				&:hover i {
 					color: #6d5dfc;
@@ -1936,8 +1937,8 @@ header {
 				}
 			}
 			.support-check-box {
-				height: 25px;
-				width: 25px;
+				height: 22px;
+				width: 22px;
 				background-color: transparent;
 				border: 2px solid #9baacf;
 				border-radius: 3px;
