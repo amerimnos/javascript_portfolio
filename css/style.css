@@ -969,7 +969,7 @@ header {
     width: calc(100vw - (100vw - 100%));
     height: calc(100vh - 80px);
     background: url(../img/commuConts1_bg3.jpg) no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed; }
   .commuConts1 .blur {
@@ -1128,6 +1128,7 @@ header {
   background: url(../img/commuConts1_bg4.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   clip-path: path("M.5,881.44v-807c381-153,767.91-.79,1271-25,374-18,541-64,899-44,310.62,17.35,390,77,390,77v803s-245-64.56-500-69c-287-5-569,65-781,65-197,0-448.23-59.81-663-59C396.5,823.27.5,881.44.5,881.44Z"); }
   .commuConts3 .inner {
     width: 1200px;
@@ -1232,7 +1233,7 @@ header {
           width: calc(100% / 3); }
         .commuConts4 .diagram .item1 .iconWrap i {
           padding-bottom: 21px;
-          font-size: 40px; }
+          font-size: 31px; }
     .commuConts4 .diagram .line1 {
       display: flex;
       align-items: center;
@@ -1253,7 +1254,7 @@ header {
       height: 250px;
       padding: 0 26px;
       border-radius: 100%;
-      background: linear-gradient(180deg, #7c149f, #5205a7);
+      background: linear-gradient(317deg, #9c2fc1, #44008f);
       flex-direction: column;
       align-items: center;
       color: #fff;
@@ -1315,11 +1316,11 @@ header {
           justify-content: space-evenly; }
         .commuConts4 .diagram .item3 .iconWrap i {
           padding: 0 10px 20px 0;
-          font-size: 40px; }
+          font-size: 35px; }
 
 .commuConts5 {
   width: 1200px;
-  margin: 0 auto 80px; }
+  margin: 0 auto 100px; }
   .commuConts5 h1 {
     display: flex;
     justify-content: space-between;
