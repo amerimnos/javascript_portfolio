@@ -17,10 +17,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:wght@300..800&family=Lora:wght@400..700&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/85c316acd7.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script defer src="js/script.js"></script>
     <style>
         body {
@@ -113,7 +119,7 @@
                     </ul>
                 </li>
             </ul>
-            <a class="nav__translate" href="#">EN</a>
+            <a class="nav__contactUs" href="#"><span class="material-icons-outlined">contact_support</sp an></a>
             <a class="nav__login" href="join.html">
                 <div class="circleWave">
                     <i class="fas fa-user-circle circleWave__btn"></i>
@@ -488,6 +494,26 @@
             </ul>
         </div>
     </footer>
+    <div class="contactForm">
+        <div id="bm"></div>
+        <div class="inner">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, provident quod repellendus ut tenetur
+                perferendis.</p>
+            <form method="post" id="contactForm">
+                <input type="hidden" name="contact_number">
+                <label for="contactName">Name</label>
+                <input type="text" name="user_name" required id="contactName" placeholder="Enter name">
+                <label for="contactEmail">Email</label>
+                <input type="email" name="user_email" required id="contactEmail" placeholder="Enter email">
+                <label for="contactMessage">Message</label>
+                <textarea name="message" required id="contactMessage" placeholder="Please write down the request."></textarea>
+                <div class="btnSlideDown">Submit
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

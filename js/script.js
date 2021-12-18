@@ -2,6 +2,8 @@ const gnbItem = document.querySelectorAll(".nav__gnb-title");
 const gnbSubitem = document.querySelectorAll(".nav__gnb-depth2-item > a");
 const totalMenuBtn = document.querySelector(".nav__total-menu");
 const totalMenuContents = document.querySelector(".total-menu");
+const nav__contactUs = document.querySelector(".nav__contactUs");
+const contactForm = document.querySelector(".contactForm");
 
 
 //애니메이션 기본 셋팅 jquery처럼 간편하게 쓸 수 있게 (value 값은 숫자 형태만 가능)
@@ -65,6 +67,55 @@ class Anime {
         }
     }
 }
+
+// lottie animation
+/*
+const svgWarp = document.getElementById('bm');
+var animation = bodymovin.loadAnimation({
+    container: svgWarp,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'img/contactAnime.json'
+});
+
+ let isComplete = true;
+submitWrap.addEventListener('mouseenter', function () {
+    if (isComplete) {
+        console.log('y');
+        animation.goToAndPlay(0);
+        animation.setSpeed(0.35);
+        isComplete = false;
+    }
+})
+animation.addEventListener('complete', function () {
+    isComplete = true;
+}) */
+
+
+// 메인페이지 Emailjs 활용
+(function () {
+    emailjs.init('user_ishCOgh8Xg8yrPckRxRDH');
+})();
+window.onload = function () {
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('service_x8h9puo', 'template_6iic09j', this)
+            .then(function () {
+                contactForm.classList.add('on');
+                //contactForm.display = "none"; // 이건 왜 안되지?? then 구문에서는 안먹히는건가?
+                alert('Thank you!');
+            }, function (error) {
+                alert('Please try again.', error);
+            });
+    });
+}
+nav__contactUs.addEventListener('click', (e)=>{
+    e.preventDefault();
+    console.log('contact')
+    contactForm.classList.add('on');
+})
 
 
 //헤더 메뉴 기능

@@ -131,8 +131,8 @@ header {
 				display: flex;
 				grid-row: 1/2;
 				grid-column: 1/2;
-				width: 3rem;
-				height: 3rem;
+				width: 2.2rem;
+				height: 2.2rem;
 				border-radius: 50%;
 				z-index: 300;
 				background: var(--greyLight-1);
@@ -148,8 +148,8 @@ header {
 			&__back-2 {
 				grid-row: 1/2;
 				grid-column: 1/2;
-				width: 3rem;
-				height: 3rem;
+				width: 2.2rem;
+				height: 2.2rem;
 				border-radius: 50%;
 				filter: blur(1px);
 				z-index: 100;
@@ -254,15 +254,43 @@ header {
 			}
 		}
 
-		&__translate {
-			display: block;
-			padding: 6px 31px;
+		&__contactUs {
+			display: flex;
+			position: relative;
+			padding: 6px 21px;
 			font-size: 15px;
 			border-right: solid 1px #f0f0f0;
 			border-left: solid 1px #f0f0f0;
+			color: #444444;
+		}
+		&__tooltip {
+			display: none;
+			position: absolute;
+			left: 50%;
+			top: 120%;
+			transform: translateX(-50%);
+			padding: 5px 25px;
+			text-align: center;
+			color: #fff;
+			background: #555;
+			border-radius: 10px;
+			&::after {
+				content: "";
+				position: absolute;
+				top: -19px;
+				left: 50%;
+				margin-left: -10px;
+				border-width: 10px;
+				border-style: solid;
+				border-color: transparent transparent #555 transparent;
+			}
+		}
+		&__contactUs:hover .nav__tooltip {
+			display: block;
 		}
 		&__login {
 			font-size: 20px;
+			color: #444444;
 		}
 
 		&__total-menu {
@@ -2305,6 +2333,134 @@ header {
 	}
 }
 
+.contactForm {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: #0000007a;
+	justify-content: center;
+	align-items: center;
+	.inner {
+    position: relative;
+    z-index: 9;
+    max-width: 600px;
+    margin: 19px;
+    padding: 43px;
+    background: radial-gradient(circle at left top, #ec75f6 15%, #cf71f2 15% 30%, #9a68ed 30% 50%, #7662e9 50% 75%, #445ae3 75% 100%);
+    border-radius: 40px;
+	}
+    &.on{
+        display:flex;
+    }
+	#bm {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 8;
+	}
+	h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 800;
+	}
+	p {
+    line-height: 1.6;
+    margin-bottom: 29px;
+    color: #fff;
+	}
+	#contactForm {
+	}
+	label {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 7px;
+	}
+	input[type="text"],
+	input[type="email"],
+	textarea {
+    width: 61%;
+    min-width: 290px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 13px;
+    background-color: #e6e6e6;
+    font-size: 16px;
+    border: none;
+	}
+	textarea {
+    width: 100%;
+    margin-bottom: 37px;
+    resize: vertical;
+	}
+	input[type="submit"] {
+    position: absolute;
+    background: transparent;
+    color: transparent;
+    border: none;
+    z-index: 10;
+    width: 96%;
+    height: 84%;
+    cursor: pointer;
+	}
+	input[type="submit"]::focus{
+		border:dotted 3px red;
+	}
+	input::placeholder, textarea::placeholder{
+		color:#a4a9bc;
+	}
+	.btnSlideDown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    width: 30%;
+    min-width: 170px;
+    margin: 0 auto;
+    padding: 13px 0;
+    background: #ededed;
+    font-weight: 700;
+    color: #445ae3;
+    border-radius: 10px;
+    box-shadow: 3px 7px 9px 0px #00000033;
+	}
+	.btnSlideDown::before,
+	.btnSlideDown::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height:100%;
+		bottom: 100%;
+		left: 0;
+		z-index: -1;
+		transition: transform 0.3s;
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	}
+	.btnSlideDown::before {
+		background: #39a2fa;
+	}
+	.btnSlideDown::after {
+		background: #2acc9f;
+	}
+	.btnSlideDown:hover {
+		color: #fff;
+	}
+	.btnSlideDown:hover::before,
+	.btnSlideDown:hover::after {
+		transform: translate3d(0, 100%, 0);
+	}
+	.btnSlideDown:hover::after {
+		transition-delay: 0.21s;
+	}
+}
+
 @media screen and (max-width: $xl) {
 	header {
 		.nav {
@@ -2567,7 +2723,7 @@ header {
 				width: 63%;
 				margin-left: 22px;
 			}
-			&__translate {
+			&__contactUs {
 				padding: 6px 13px;
 			}
 		}
@@ -2800,7 +2956,7 @@ header {
 			&__gnb {
 				display: none;
 			}
-			&__translate {
+			&__contactUs {
 				order: 1;
 				margin: 0 0 0 24px;
 				padding: 8px;
@@ -3101,7 +3257,7 @@ header {
 			}
 			&__gnb {
 			}
-			&__translate {
+			&__contactUs {
 			}
 			&__login {
 			}
@@ -3397,7 +3553,7 @@ header {
 			}
 			&__gnb {
 			}
-			&__translate {
+			&__contactUs {
 				display: none;
 			}
 			&__login {
