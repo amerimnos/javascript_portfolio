@@ -4,6 +4,7 @@ const totalMenuBtn = document.querySelector(".nav__total-menu");
 const totalMenuContents = document.querySelector(".total-menu");
 const nav__contactUs = document.querySelector(".nav__contactUs");
 const contactForm = document.querySelector(".contactForm");
+const bm = document.querySelector("#bm");
 
 
 //애니메이션 기본 셋팅 jquery처럼 간편하게 쓸 수 있게 (value 값은 숫자 형태만 가능)
@@ -69,7 +70,6 @@ class Anime {
 }
 
 // lottie animation
-/*
 const svgWarp = document.getElementById('bm');
 var animation = bodymovin.loadAnimation({
     container: svgWarp,
@@ -79,12 +79,13 @@ var animation = bodymovin.loadAnimation({
     path: 'img/contactAnime.json'
 });
 
- let isComplete = true;
+/*  let isComplete = true;
 submitWrap.addEventListener('mouseenter', function () {
     if (isComplete) {
         console.log('y');
         animation.goToAndPlay(0);
         animation.setSpeed(0.35);
+        lottie.destroy()
         isComplete = false;
     }
 })
@@ -103,9 +104,16 @@ window.onload = function () {
         this.contact_number.value = Math.random() * 100000 | 0;
         emailjs.sendForm('service_x8h9puo', 'template_6iic09j', this)
             .then(function () {
-                contactForm.classList.add('on');
                 //contactForm.display = "none"; // 이건 왜 안되지?? then 구문에서는 안먹히는건가?
-                alert('Thank you!');
+                contactForm.classList.remove('on');
+                bm.classList.add('on');
+                animation.goToAndPlay(0);
+                animation.setSpeed(0.5);
+                animation.addEventListener('complete', function () {
+                    bm.classList.remove('on');
+                    alert('Thank you!');
+                })
+                
             }, function (error) {
                 alert('Please try again.', error);
             });

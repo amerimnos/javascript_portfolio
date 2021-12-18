@@ -2356,12 +2356,6 @@ header {
     &.on{
         display:flex;
     }
-	#bm {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		z-index: 8;
-	}
 	h1 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -2460,6 +2454,19 @@ header {
 		transition-delay: 0.21s;
 	}
 }
+
+#bm {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    &.on{
+        z-index: 10;
+    }
+}
+
 
 @media screen and (max-width: $xl) {
 	header {
