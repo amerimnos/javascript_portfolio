@@ -2694,6 +2694,8 @@ header {
     height: calc(100vh - 60px); }
     .commuConts1::before {
       height: calc(100vh - 60px); }
+    .commuConts1 .blur {
+      height: calc(100vh - 60px); }
     .commuConts1 .txt {
       top: 50%;
       left: calc(15.5vw - 10.9vw);
