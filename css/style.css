@@ -1091,8 +1091,8 @@ header {
     color: #fff; }
   .commuConts1 .txtBox {
     position: absolute;
-    right: 10%;
-    bottom: 8%;
+    left: 43.3vw;
+    bottom: 7vw;
     z-index: 1;
     width: 560px;
     border: solid 3px #ffffff99;
@@ -1170,7 +1170,7 @@ header {
       background: #f8f8f8;
       color: #849a3e; }
     .commuConts2 .noticeTable td {
-      padding: 10px 0;
+      padding: 10px;
       border-top: solid 1px #eeeeee;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -1250,22 +1250,22 @@ header {
     .commuConts3 .quest p {
       display: flex;
       align-items: center; }
-    .commuConts3 .quest p::before {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 1px;
-      background: #000;
-      transition: 0.5s; }
-    .commuConts3 .quest p::after {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 1px;
-      margin-left: -20px;
-      background: #000000;
-      transition: 0.5s;
-      transform: rotateZ(90deg); }
+      .commuConts3 .quest p::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 1px;
+        background: #000;
+        transition: 0.5s; }
+      .commuConts3 .quest p::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 1px;
+        margin-left: -20px;
+        background: #000000;
+        transition: 0.5s;
+        transform: rotateZ(90deg); }
     .commuConts3 .quest.on p::after {
       transform: rotateZ(0deg); }
   .commuConts3 .answer {
@@ -1287,7 +1287,8 @@ header {
   margin: 0 auto 93px; }
   .commuConts4 h1 {
     margin-bottom: 80px;
-    font-size: 31px; }
+    font-size: 31px;
+    color: #717c5b; }
   .commuConts4 h2 {
     margin-bottom: 20px;
     text-align: center;
@@ -1418,7 +1419,8 @@ header {
     justify-content: space-between;
     margin-bottom: 11px;
     font-size: 31px;
-    align-items: flex-end; }
+    align-items: flex-end;
+    color: #717c5b; }
     .commuConts5 h1 span {
       font-size: 18px;
       font-weight: 300;
@@ -2132,6 +2134,36 @@ header {
     padding: 80px 0 0; }
 
   /* === about page end ===*/
+  /* === community page start ===*/
+  .commuConts1 .txt {
+    top: 50%;
+    left: calc(15.5vw - 7vw);
+    font-size: 8vw; }
+  .commuConts1 h2 {
+    top: calc(50% - 6.7vw);
+    left: 37.3vw;
+    font-size: 8vw; }
+  .commuConts1 .txtBox {
+    left: 40.3vw;
+    bottom: 4vw;
+    z-index: 1;
+    width: 40vw;
+    min-width: 460px;
+    padding: 3vw; }
+
+  .commuConts2 {
+    padding: 0 20px; }
+
+  .commuConts3 .inner {
+    padding: 0 20px; }
+
+  .commuConts4 {
+    padding: 0 20px; }
+
+  .commuConts5 {
+    padding: 0 20px; }
+
+  /* === community page end ===*/
   .footer__tit {
     padding: 25px 0; }
   .footer__menu-wrap {
@@ -2318,6 +2350,27 @@ header {
     width: 65%; }
 
   /* === about page end ===*/
+  /* === community page start ===*/
+  .commuConts2 {
+    width: 100%; }
+
+  .commuConts3 .inner {
+    width: 100%;
+    padding: 0 20px; }
+
+  .commuConts4 {
+    width: 100%;
+    padding: 0 20px; }
+    .commuConts4 h2 {
+      font-size: 5vw; }
+    .commuConts4 .diagram {
+      width: 100%; }
+
+  .commuConts5 {
+    width: 100%;
+    padding: 0 20px; }
+
+  /* === community page end ===*/
   .footer__tit {
     padding: 25px 0; }
   .footer__menu-wrap {
@@ -2636,6 +2689,51 @@ header {
     width: 85%; }
 
   /* === about page end ===*/
+  /* === community page start ===*/
+  .commuConts1 .txt {
+    top: 50%;
+    left: calc(15.5vw - 10.9vw);
+    font-size: 9vw; }
+  .commuConts1 h2 {
+    top: calc(50% - 6.5vw);
+    left: 37vw;
+    font-size: 9vw; }
+  .commuConts1 .txtBox {
+    left: 5vw;
+    bottom: 5vw;
+    width: 90vw; }
+    .commuConts1 .txtBox h3 {
+      font-size: 4vw; }
+
+  .commuConts3 {
+    display: flex;
+    padding: 0;
+    min-height: 891px;
+    align-items: center; }
+
+  .commuConts4 .diagram .item1 {
+    height: 230px;
+    padding: 0; }
+    .commuConts4 .diagram .item1 .iconWrap {
+      width: 80%; }
+      .commuConts4 .diagram .item1 .iconWrap li {
+        font-size: 14px; }
+  .commuConts4 .diagram .item2 {
+    height: 230px;
+    padding: 0; }
+    .commuConts4 .diagram .item2 div {
+      font-size: 24px; }
+  .commuConts4 .diagram .item3 {
+    height: 230px;
+    padding: 0; }
+    .commuConts4 .diagram .item3 .iconWrap li {
+      width: 75%; }
+
+  .commuConts5 {
+    width: 100%;
+    padding: 0 20px; }
+
+  /* === community page end ===*/
   .footer__tit {
     padding: 20px 0; }
   .footer__menu-wrap {
@@ -2947,6 +3045,59 @@ header {
         width: 85%; }
 
   /* === about page end ===*/
+  /* === community page start ===*/
+  .commuConts1 .txt {
+    top: 35%; }
+  .commuConts1 h2 {
+    top: calc(35% - 6.5vw); }
+  .commuConts1 .txtBox h3 {
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw; }
+  .commuConts1 .txtBox p {
+    line-height: 1.4; }
+
+  .commuConts2 {
+    margin: 50px auto; }
+
+  .commuConts4 h1 {
+    margin-bottom: 50px; }
+  .commuConts4 .diagram {
+    flex-direction: column; }
+    .commuConts4 .diagram .item1 {
+      height: 230px;
+      padding: 0; }
+      .commuConts4 .diagram .item1 .iconWrap {
+        width: 80%; }
+        .commuConts4 .diagram .item1 .iconWrap li {
+          font-size: 14px; }
+    .commuConts4 .diagram .line1 {
+      flex-direction: column;
+      width: 2px;
+      height: 64px;
+      margin: 10px 0; }
+    .commuConts4 .diagram .item2 {
+      height: 230px;
+      padding: 0; }
+      .commuConts4 .diagram .item2 div {
+        font-size: 24px; }
+    .commuConts4 .diagram .line2 {
+      flex-direction: column;
+      margin: 20px 0; }
+      .commuConts4 .diagram .line2::before {
+        width: 2px;
+        height: 43px; }
+      .commuConts4 .diagram .line2::after {
+        width: 10px;
+        height: 10px;
+        background-color: #7a1dae;
+        border-radius: 5px;
+        border: none; }
+
+  .commuConts5 {
+    width: 100%;
+    padding: 0 20px; }
+
+  /* === community page end ===*/
   .footer__menu-wrap {
     width: calc(100% - 20px * 2); }
   .footer__menu-tit {
@@ -3373,6 +3524,49 @@ header {
         width: 85%; }
 
   /* === about page end ===*/
+  /* === community page start ===*/
+  .commuConts1 .txtBox {
+    min-width: initial;
+    padding: 4.3vw; }
+    .commuConts1 .txtBox h3 {
+      margin-left: 10vw;
+      font-size: 5vw; }
+    .commuConts1 .txtBox p {
+      font-size: 14px; }
+
+  .commuConts2 .tit {
+    font-size: 25px; }
+  .commuConts2 .subTxt {
+    font-size: 15px; }
+  .commuConts2 .noticeTable th:nth-child(1),
+  .commuConts2 .noticeTable td:nth-child(1),
+  .commuConts2 .noticeTable th:nth-child(3),
+  .commuConts2 .noticeTable td:nth-child(3) {
+    display: none; }
+
+  .commuConts3 {
+    clip-path: initial; }
+    .commuConts3 .inner {
+      padding: 50px 10px; }
+    .commuConts3 li {
+      padding: 15px; }
+    .commuConts3 .quest span {
+      padding: 0 10px; }
+    .commuConts3 .quest div {
+      font-size: 14px; }
+    .commuConts3 .quest p {
+      margin-left: 10px; }
+    .commuConts3 .answer span {
+      padding: 0 10px; }
+    .commuConts3 .answer div {
+      font-size: 14px; }
+
+  .commuConts5 h1 {
+    flex-direction: column;
+    align-items: initial;
+    margin-bottom: 25px; }
+
+  /* === community page end ===*/
   .footer__menu-wrap {
     flex-wrap: wrap; }
   .footer__menu {
