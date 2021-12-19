@@ -4114,7 +4114,9 @@ header {
 
 	/* === community page start ===*/
 	.commuConts1 {
+		height: calc(100vh - 60px);
 		&::before {
+			height: calc(100vh - 60px);
 		}
 		.blur {
 		}
@@ -5698,6 +5700,7 @@ header {
 		.txtBox {
 			min-width: initial;
 			padding: 4.3vw;
+			bottom: 10vw;
 			h3 {
 				margin-left: 10vw;
 				font-size: 5vw;
