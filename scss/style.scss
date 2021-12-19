@@ -3562,7 +3562,7 @@ header {
 			font-size: 49px;
 		}
 		.imgWrap {
-			min-height: 386px;
+			min-height: 456px;
 			div {
 			}
 			img {
@@ -4068,7 +4068,7 @@ header {
 			font-size: 35px;
 		}
 		.imgWrap {
-			min-height: 300px;
+			min-height: 405px;
 			div {
 			}
 			img {
@@ -4177,7 +4177,7 @@ header {
 				font-weight: 700;
 			}
 			p {
-				font-size:14px;
+				font-size: 14px;
 			}
 		}
 
@@ -4202,7 +4202,7 @@ header {
 				font-weight: 700;
 			}
 			div {
-                font-size: 35px;
+				font-size: 35px;
 			}
 		}
 		.bgIcon1 {
@@ -4221,7 +4221,7 @@ header {
 			}
 		}
 		.sponsor {
-            padding: 120px 0px 0;
+			padding: 120px 0px 0;
 			li {
 			}
 			i {
@@ -4230,7 +4230,7 @@ header {
 	}
 
 	.aboutConts4 {
-        padding: 60px 0 0;
+		padding: 60px 0 0;
 		.inner {
 		}
 		.titIcon {
@@ -4238,11 +4238,11 @@ header {
 			}
 		}
 		h1 {
-			font-size:40px;
+			font-size: 40px;
 		}
 		.subConts {
-			width:80%;
-			font-size:15px;
+			width: 80%;
+			font-size: 15px;
 		}
 		.tab {
 			margin-bottom: 123px;
@@ -4254,8 +4254,8 @@ header {
 		.list {
 		}
 		.item {
-            width: calc(100% / 3 - 30px);
-            margin-bottom: 20%;
+			width: calc(100% / 3 - 30px);
+			margin-bottom: 20%;
 
 			img {
 				width: 13vw;
@@ -4599,7 +4599,7 @@ header {
 		}
 		&__item:first-child {
 			position: initial;
-			width: calc(100% - 20px);
+			width: calc(100% - 25px);
 			margin-bottom: 40px;
 		}
 		&__item:last-child {
@@ -4642,16 +4642,14 @@ header {
 		}
 	}
 
-
-
 	/* === about page start ===*/
 	.aboutConts1 {
-		margin: 60px 20px 60px;
+		width: calc(100% - 25px);
+		margin: 60px 10px 60px;
 		display: block;
 		.leftConts {
-			float: left;
-			width: 47%;
-			margin: 0 30px 30px 0;
+			width: 100%;
+			float: initial;
 			&::before {
 				display: none;
 			}
@@ -4664,54 +4662,82 @@ header {
 			font-size: 35px;
 		}
 		.imgWrap {
-			min-height: 300px;
+			min-height: initial;
+			display: flex;
+			align-items: flex-end;
+			flex-wrap: wrap;
 			div {
+				width: 50%;
+				height: 150px;
+				position: initial;
+				margin-left: auto;
 			}
 			img {
+				object-fit: cover;
+				height: 100%;
 			}
 		}
 		.img1 {
+			top: initial;
+			left: initial;
+			width: initial;
+			z-index: initial;
 		}
 		.img2 {
+			top: initial;
+			left: initial;
+			width: initial;
+			z-index: initial;
 		}
 		.img3 {
-			top: 0;
-			width: 35%;
+			top: initial;
+			left: initial;
+			width: initial;
+			z-index: initial;
 		}
 		.img4 {
-			top: 40%;
-			width: 60%;
+			top: initial;
+			left: initial;
+			width: initial;
+			z-index: initial;
 		}
 		.img5 {
-			top: 60%;
-			left: 34%;
-			width: 65%;
-			z-index: -1;
+			top: initial;
+			left: initial;
+			width: initial;
+			z-index: initial;
 		}
 		.rightConts {
 		}
 		.rgihtTopTxt {
+			margin: 67px 0 27px;
 		}
 		.subTit {
-			font-size: 27px;
 		}
 		.subTitBottomTxt {
 		}
 		.mainTxt {
+			font-size: 15px;
 		}
 		.bottomTxt {
+			font-size: 15px;
 		}
 	}
 
 	.aboutConts2 {
 		.inner {
-			padding: 60px 13px;
+			width: calc(100% - 25px);
+			padding: 60px 0px;
 		}
 		.item1 {
+			flex-wrap: wrap;
 			h1 {
-				font-size: 27px;
+				width: 100%;
+				margin-bottom: 30px;
 			}
 			div {
+				width: 100%;
+				margin-bottom: 40px;
 				font-size: 13px;
 				letter-spacing: 3px;
 				&::before {
@@ -4721,26 +4747,41 @@ header {
 		}
 		.item2 {
 			.txt {
-				width: 65%;
-				margin-bottom: 116px;
+				width: 100%;
+				margin-bottom: 50px;
+				font-size: 15px;
 			}
 			.number {
-				margin-bottom: 0px;
+				width: 100%;
+				flex-wrap: wrap;
 				li {
-					font-size: 5vw;
+					width: 50%;
+					margin-bottom: 30px;
+					font-size: 9vw;
+					text-align: center;
+					letter-spacing: 0.8px;
 				}
 				span {
 				}
 			}
 			.imgClip {
-				width: 27%;
+				position: relative;
+				width: 70%;
+				margin: 0 auto;
 				&::before {
 				}
 				div {
+					padding: 0 0 17vw 0;
+					display: flex;
+					font-size: 38vw;
+					font-weight: 600;
+					justify-content: center;
+					align-items: center;
 				}
 				span {
-					padding: 17%;
-					font-size: 13px;
+					margin-top: 41vw;
+					padding: 9vw;
+					font-size: 4.4vw;
 				}
 			}
 			&::after {
@@ -4748,16 +4789,15 @@ header {
 		}
 	}
 	.aboutConts3 {
-		padding: 70px 15px;
+		padding: 60px 15px;
 		overflow: hidden;
 		.tit {
-			width: 80%;
-			font-size: 27px;
+			width: 100%;
+			font-size: 20px;
+			line-height:1.5;
 		}
 		.itemWrap {
-			flex-direction: row;
-			height: auto;
-			width: 82%;
+			width: 100%;
 			li:nth-child(5) {
 				padding-top: 0;
 			}
@@ -4766,26 +4806,24 @@ header {
 			}
 		}
 		.item1 {
-			width: calc(100% / 3);
+			width: 100%;
 			padding-right: 3vw;
 			div {
 				padding: 0px 0 15px;
 				font-weight: 700;
 			}
 			p {
-				font-size:14px;
+				margin-bottom:35px;
+				font-size: 14px;
+
 			}
 		}
 
 		.imgWrap {
-			position: absolute;
-			left: 100%;
-			order: 8;
-			width: 47%;
-			height: 100%;
+			display:none;
 			img {
 				height: 100%;
-				padding: 20px;
+				padding: 10px;
 			}
 		}
 		.item2 {
@@ -4795,54 +4833,67 @@ header {
 
 			p {
 				margin-left: 0;
+				padding:0 0 5px 0;
 				font-weight: 700;
 			}
 			div {
-                font-size: 35px;
+				font-size: 25px;
 			}
 		}
 		.bgIcon1 {
-			right: -29%;
-			top: -88%;
-			bottom: initial;
+    left: 0%;
+    right: initial;
+    top: -45%;
+    bottom: initial;
 			i {
-				font-size: 200px;
+				font-size: 150px;
 			}
 		}
 		.bgIcon2 {
-			left: initial;
-			right: -22%;
-			bottom: -15%;
+    left: initial;
+    right: -6%;
+    bottom: -1%;
+    z-index: -1;
+    transform: rotateZ(180deg);
 			i {
 			}
 		}
 		.sponsor {
-            padding: 120px 0px 0;
+			padding: 57px 0px 0;
 			li {
 			}
 			i {
+				font-size:9vw;
 			}
 		}
 	}
 
 	.aboutConts4 {
-        padding: 60px 0 0;
+		padding: 60px 0 0;
 		.inner {
+			padding:0 15px;
 		}
 		.titIcon {
+			margin-bottom:15px;
 			i {
 			}
 		}
 		h1 {
-			font-size:40px;
+			font-size: 30px;
 		}
 		.subConts {
-			width:80%;
-			font-size:15px;
+			width: 100%;
+			font-size: 15px;
 		}
 		.tab {
+			justify-content: space-around;
+			width:100%;
 			margin-bottom: 123px;
 			li {
+    width: 31%;
+    font-size: 14px;
+    letter-spacing: 0;
+    background-color: #ece7f9;
 			}
 			li:last-child {
 			}
@@ -4850,12 +4901,13 @@ header {
 		.list {
 		}
 		.item {
-            width: calc(100% / 3 - 30px);
-            margin-bottom: 20%;
+    width: 85%;
+    margin-bottom: 32vw;
 
 			img {
-				width: 13vw;
-				height: 13vw;
+    width: 39vw;
+    height: 39vw;
+    margin-bottom: 19px;
 			}
 			.name {
 				font-size: 17px;
@@ -4871,7 +4923,6 @@ header {
 		}
 	}
 	/* === about page end ===*/
-	
 
 	.footer {
 		&__tit {
