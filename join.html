@@ -269,29 +269,24 @@
             <div class="tit"><i class="material-icons">business_center</i> Personal information</div>
             <table class="form-table">
                 <caption>ID, Password, phone 등을 입력해주세요.</caption>
-                <colgroup>
-                    <col style="width:20%;">
-                    <col style="width:30%;">
-                    <col style="width:20%;">
-                    <col style="width:30%;">
-                </colgroup>
                 <tbody>
                     <tr>
-
                         <td scope="row">
                             <label for="name">Name <span class="necessary">*</span></label>
                         </td>
                         <td>
-                            <div class="inputWrap width-full">
+                            <div class="inputWrap">
                                 <input type="text" name="name" id="name" placeholder="Enter name">
                                 <span class="inputFocus"></span>
                             </div>
                         </td>
+                    </tr>
+                    <tr>
                         <td scope="row">
                             <label for="email">Email <span class="necessary">*</span></label>
                         </td>
                         <td>
-                            <div class="inputWrap width-full">
+                            <div class="inputWrap">
                                 <input type="text" name="email" id="email" placeholder="Enter email">
                                 <span class="inputFocus"></span>
                             </div>
@@ -301,8 +296,8 @@
                         <td scope="row">
                             <label for="phone">Phone <span class="necessary">*</span></label>
                         </td>
-                        <td colspan="3">
-                            <div class="inputWrap width-full">
+                        <td>
+                            <div class="inputWrap">
                                 <input type="text" name="phone" id="phone" placeholder="Enter phone">
                                 <span class="inputFocus"></span>
                             </div>
@@ -312,7 +307,7 @@
                         <td scope="row">
                             <label for="age">Age <span class="necessary">*</span></label>
                         </td>
-                        <td colspan="3">
+                        <td>
                             <div class="customSelectWrap">
                                 <select name="age" id="age">
                                     <option value="company_sort1">10s</option>
@@ -329,18 +324,18 @@
                         <td scope="row" rowspan="3">
                             <label for="companyAddress">Address <span class="necessary">*</span></label>
                         </td>
-                        <td colspan="3">
+                        <td class="smTrans">
                             <div class="inputWrap">
-                                <input type="text" name="companyAddress" id="companyAddress" placeholder="Enter adress">
+                                <input class="smTrans" type="text" name="companyAddress" id="companyAddress" placeholder="Enter adress">
                                 <span class="inputFocus"></span>
                             </div>
                             <button class="support-btn">Search</button>
-                            <div class="inputWrap width-full">
+                            <div class="inputWrap mt10 width-full">
                                 <input type="text" name="companyAddressDetail1"
                                     placeholder="Please write the address in detail.">
                                 <span class="inputFocus"></span>
                             </div>
-                            <div class="inputWrap width-full">
+                            <div class="inputWrap mt10 width-full">
                                 <input type="text" name="companyAddressDetail2"
                                     placeholder="Please write the address in detail.">
                                 <span class="inputFocus"></span>
@@ -361,7 +356,7 @@
                 <tbody>
                     <tr>
                         <td>Symposium <span class="necessary">*</span></td>
-                        <td colspan="3">
+                        <td>
                             <input type="checkbox" name="sympo_sat" id="sympo_sat">Sat
                             <label for="sympo_sat" class="support-check-box interval"></label>
                             <input type="checkbox" name="sympo_sun" id="sympo_sun">Sun
@@ -374,7 +369,7 @@
                     </tr>
                     <tr>
                         <td>Banner request <span class="necessary">*</span></td>
-                        <td colspan="3">
+                        <td>
                             <label class="radio-wrap interval">
                                 <input type="radio" name="banner_apply" value="yes" class="radio-box">
                                 <i class="radio-button"></i> <span>yes</span>
@@ -389,7 +384,7 @@
                         <td scope="row">
                             <label for="bday">Banner date <span class="necessary">*</span></label>
                         </td>
-                        <td colspan="3">
+                        <td>
 
                             <div class="inputWrap">
                                 <input type="date" name="bday" id="bday" required pattern="\d{4}-\d{2}-\d{2}">
@@ -401,7 +396,7 @@
                         <td scope="row">
                             <label for="additionalRequest">Additional requests</label>
                         </td>
-                        <td colspan="3">
+                        <td>
                             <div class="inputWrap width-full">
                                 <textarea name="additionalRequest" id="additionalRequest" class="textareaBox"
                                     placeholder="Please feel free to write down the request."></textarea>

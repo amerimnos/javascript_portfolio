@@ -1532,6 +1532,11 @@ header {
         color: #9baacf;
         text-align: center;
         font-weight: bold; }
+      .joinConts2 #form .form-table td:nth-child(1) {
+        width: 25%;
+        vertical-align: top; }
+      .joinConts2 #form .form-table td:nth-child(2) {
+        width: 75%; }
       .joinConts2 #form .form-table .necessary {
         color: red; }
       .joinConts2 #form .form-table .sponsorSubContents {
@@ -1572,9 +1577,10 @@ header {
         width: 100%;
         box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff;
         background: none; }
+      .joinConts2 #form .form-table .mt10 {
+        margin-top: 10px; }
       .joinConts2 #form .form-table .width-full {
-        width: 100%;
-        margin: 10px 0px 0px 0px; }
+        width: 100%; }
         .joinConts2 #form .form-table .width-full input[type="text"] {
           width: 100%;
           box-sizing: border-box; }
@@ -2371,6 +2377,19 @@ header {
     padding: 0 20px; }
 
   /* === community page end ===*/
+  /* === join page start ===*/
+  .joinConts1 {
+    width: 100%;
+    margin: 80px auto; }
+    .joinConts1 .info {
+      width: 85%; }
+
+  .joinConts2 {
+    width: 100%; }
+    .joinConts2 #form {
+      width: 85%; }
+
+  /* === join page end ===*/
   .footer__tit {
     padding: 25px 0; }
   .footer__menu-wrap {
@@ -2740,6 +2759,17 @@ header {
     padding: 0 20px; }
 
   /* === community page end ===*/
+  /* === join page start ===*/
+  .joinConts1 .info {
+    width: 90%; }
+
+  .joinConts2 #form {
+    width: 90%; }
+    .joinConts2 #form .form-table .sponsorSubContents {
+      margin-top: 7px;
+      padding-left: 0; }
+
+  /* === join page end ===*/
   .footer__tit {
     padding: 20px 0; }
   .footer__menu-wrap {
@@ -3104,6 +3134,38 @@ header {
     padding: 0 20px; }
 
   /* === community page end ===*/
+  /* === join page start ===*/
+  .joinConts1 {
+    margin: 60px auto; }
+    .joinConts1 .info {
+      width: 90%; }
+      .joinConts1 .info dt {
+        width: 30%; }
+
+  .joinConts2 {
+    margin: 0 auto 80px; }
+    .joinConts2 #form {
+      width: 90%; }
+      .joinConts2 #form .form-table .sponsorSubContents {
+        margin-top: 7px;
+        padding-left: 0; }
+      .joinConts2 #form .form-table td.smTrans {
+        position: relative; }
+      .joinConts2 #form .form-table div.smTrans {
+        width: 100%; }
+      .joinConts2 #form .form-table .support-btn {
+        position: absolute;
+        top: 58px;
+        left: -80px; }
+      .joinConts2 #form .form-table .customSelectWrap {
+        width: 65%; }
+      .joinConts2 #form .payinfo {
+        width: 100%;
+        margin: 50px auto; }
+      .joinConts2 #form .commonBtn1 {
+        margin-bottom: 20px; }
+
+  /* === join page end ===*/
   .footer__menu-wrap {
     width: calc(100% - 20px * 2); }
   .footer__menu-tit {
@@ -3574,6 +3636,34 @@ header {
     margin-bottom: 25px; }
 
   /* === community page end ===*/
+  /* === join page start ===*/
+  .joinConts1 {
+    margin: 40px auto; }
+    .joinConts1 .info {
+      width: 90%;
+      font-size: 14px; }
+      .joinConts1 .info dd {
+        border-radius: 0.3rem; }
+      .joinConts1 .info dt {
+        width: 35%;
+        height: 75px;
+        border-radius: 0.3rem; }
+
+  .joinConts2 #form {
+    width: 90%;
+    padding: 20px; }
+    .joinConts2 #form .form-table ::placeholder {
+      font-size: 13px; }
+    .joinConts2 #form .form-table .support-btn {
+      position: absolute;
+      top: 58px;
+      left: -80px; }
+    .joinConts2 #form .form-table .textareaBox {
+      min-height: 90px; }
+    .joinConts2 #form .form-table .customSelectWrap {
+      width: 100%; }
+
+  /* === join page end ===*/
   .footer__menu-wrap {
     flex-wrap: wrap; }
   .footer__menu {
