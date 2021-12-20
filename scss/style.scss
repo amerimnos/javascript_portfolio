@@ -1881,10 +1881,9 @@ header {
 	#form {
 		width: 70%;
 		padding: 40px;
-		border-radius: 20px;
 		font-family: "Noto Sans KR", sans-serif;
 		font-size: 14px;
-		border-radius: 50px;
+		border-radius: 30px;
 		box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #ffffff;
 
 		input[type="submit"],
@@ -4479,6 +4478,7 @@ header {
 	.joinConts2 {
 		#form {
 			width: 90%;
+			border-radius: 20px;
 			input[type="submit"],
 			input[type="reset"] {
 			}
@@ -5380,20 +5380,7 @@ header {
 					margin-top: 7px;
 					padding-left: 0;
 				}
-				td.smTrans {
-					position: relative;
-				}
-				div.smTrans {
-					width: 100%;
-				}
 				.support-btn {
-					position: absolute;
-					top: 58px;
-					left: -80px;
-					&:active {
-					}
-					&:hover {
-					}
 				}
 				.inputWrap {
 				}
@@ -5413,7 +5400,6 @@ header {
 
 				.customSelectWrap {
 					width: 65%;
-
 					select {
 					}
 					i {
@@ -6388,15 +6374,28 @@ header {
 				}
 				.sponsorSubContents {
 				}
+
+				td.smTrans {
+					position: relative;
+				}
+				label.smTrans {
+					position: relative;
+					top: 50px;
+				}
+				div.smTrans {
+					width: 100%;
+				}
 				.support-btn {
 					position: absolute;
-					top: 58px;
-					left: -80px;
+					top: 13px;
+					left: -79px;
+					margin: 0;
 					&:active {
 					}
 					&:hover {
 					}
 				}
+
 				.inputWrap {
 				}
 				input {
@@ -6423,6 +6422,11 @@ header {
 					}
 					&:hover i {
 					}
+				}
+
+				input[type="date"] {
+					width: 100%;
+					padding: 5px;
 				}
 
 				input[type="checkbox"] {
@@ -6478,12 +6482,16 @@ header {
 			}
 
 			.payinfo {
+				margin-bottom: 20px;
 			}
 
 			.btn-wrap {
+				justify-content: space-between;
 			}
 
 			.commonBtn1 {
+				width: 40%;
+				padding: 10px;
 			}
 			span:last-child {
 			}
@@ -6500,6 +6508,7 @@ header {
 
 	.footer {
 		&__tit {
+			padding: 0 10px;
 		}
 
 		&__menu-wrap {
