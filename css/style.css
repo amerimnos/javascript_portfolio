@@ -124,8 +124,7 @@ header {
       header .nav__gnb-depth1-item {
         position: relative;
         text-align: center;
-        transition: all 0.5s;
-        border-radius: 10px; }
+        transition: all 0.5s; }
         header .nav__gnb-depth1-item:hover {
           background-color: #dcdcdc; }
         header .nav__gnb-depth1-item:hover .nav__gnb-depth2 {
@@ -133,7 +132,6 @@ header {
       header .nav__gnb-title {
         display: inline-block;
         padding: 10px;
-        border-radius: 21px;
         font-size: 14.3px;
         text-align: center;
         font-weight: 530; }
@@ -143,7 +141,7 @@ header {
         top: 40px;
         width: 189px;
         padding: 12px;
-        border-radius: 9px;
+        border-radius: 5px;
         transition: 0.5s;
         background-color: #fff;
         box-shadow: 1px 1px 9px #cacaca; }
@@ -1016,7 +1014,6 @@ header {
     width: calc(25% - 30px);
     margin-bottom: 12.4%;
     text-align: center;
-    border-radius: 8px;
     box-shadow: 0px 9px 20px 7px #d8d8d8; }
     .aboutConts4 .item img {
       display: inline-block;
