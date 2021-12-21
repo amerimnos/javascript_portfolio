@@ -2264,6 +2264,114 @@ header {
 }
 /* === join page end ===*/
 
+/* === youtube page start ===*/
+.youtubeConts {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 1800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+	* {
+		font-family: lora;
+	}
+	>article, >div {
+		border: 1px solid #000;
+	}
+	.leftTxt {
+    width: 100px;
+    height: 100%;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+		.logo {
+			font-size: 12px;
+			text-align: right;
+		}
+		.middleTxt {
+			font-size: 14px;
+			&::before {
+				content: "";
+				display: block;
+				background: #000;
+				width: 1px;
+				height: 20px;
+			}
+		}
+		.bottomTxt {
+			font-size: 14px;
+		}
+	}
+	.titConts {
+        width: 25vw;
+		.search {
+			text-align: right;
+			padding-bottom: 120px;
+		}
+		p {
+			font-style: italic;
+			padding-bottom: 10px;
+		}
+		.tit {
+			font-size: 50px;
+			font-weight: 600;
+		}
+		.more {
+			font-size: 12px;
+			i {
+				padding-right: 15px;
+			}
+		}
+	}
+	.videoConts {
+    width: 25vw;
+    height: 40vh;
+    position: relative;
+    color: #fff;
+    padding: 20px;
+		.tit {
+			font-size: 20px;
+			padding-bottom: 15px;
+		}
+		p {
+			font-style: italic;
+			font-size: 13px;
+		}
+		.bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4);
+		}
+	}
+	>div:nth-child(1) {
+		width: 25vw;
+		height: 60vh;
+		margin-left: 5vw;
+	}
+	>div:nth-child(2) {
+		width: 25vw;
+		height: 25vh;
+		margin-left: 5vw;
+		margin-bottom: 5vh;
+	}
+    .rightTxt{
+    width: 100px;
+    height: 100%;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+        .topTxt{
+            font-size: 13px;
+        }
+        .sns{
+            display: flex;
+        }
+        .bottomTxt{
+            font-size: 13px;
+        }
+    }
+}
+/* === youtube page end ===*/
+
 .footer {
 	position: relative;
 	width: 100%;

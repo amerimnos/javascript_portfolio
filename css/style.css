@@ -1794,6 +1794,90 @@ header {
         transition: all 0.8s cubic-bezier(0.48, 0, 0.12, 1); }
 
 /* === join page end ===*/
+/* === youtube page start ===*/
+.youtubeConts {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 1800px;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+  .youtubeConts * {
+    font-family: lora; }
+  .youtubeConts > article, .youtubeConts > div {
+    border: 1px solid #000; }
+  .youtubeConts .leftTxt {
+    width: 100px;
+    height: 100%;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr; }
+    .youtubeConts .leftTxt .logo {
+      font-size: 12px;
+      text-align: right; }
+    .youtubeConts .leftTxt .middleTxt {
+      font-size: 14px; }
+      .youtubeConts .leftTxt .middleTxt::before {
+        content: "";
+        display: block;
+        background: #000;
+        width: 1px;
+        height: 20px; }
+    .youtubeConts .leftTxt .bottomTxt {
+      font-size: 14px; }
+  .youtubeConts .titConts {
+    width: 25vw; }
+    .youtubeConts .titConts .search {
+      text-align: right;
+      padding-bottom: 120px; }
+    .youtubeConts .titConts p {
+      font-style: italic;
+      padding-bottom: 10px; }
+    .youtubeConts .titConts .tit {
+      font-size: 50px;
+      font-weight: 600; }
+    .youtubeConts .titConts .more {
+      font-size: 12px; }
+      .youtubeConts .titConts .more i {
+        padding-right: 15px; }
+  .youtubeConts .videoConts {
+    width: 25vw;
+    height: 40vh;
+    position: relative;
+    color: #fff;
+    padding: 20px; }
+    .youtubeConts .videoConts .tit {
+      font-size: 20px;
+      padding-bottom: 15px; }
+    .youtubeConts .videoConts p {
+      font-style: italic;
+      font-size: 13px; }
+    .youtubeConts .videoConts .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); }
+  .youtubeConts > div:nth-child(1) {
+    width: 25vw;
+    height: 60vh;
+    margin-left: 5vw; }
+  .youtubeConts > div:nth-child(2) {
+    width: 25vw;
+    height: 25vh;
+    margin-left: 5vw;
+    margin-bottom: 5vh; }
+  .youtubeConts .rightTxt {
+    width: 100px;
+    height: 100%;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr; }
+    .youtubeConts .rightTxt .topTxt {
+      font-size: 13px; }
+    .youtubeConts .rightTxt .sns {
+      display: flex; }
+    .youtubeConts .rightTxt .bottomTxt {
+      font-size: 13px; }
+
+/* === youtube page end ===*/
 .footer {
   position: relative;
   width: 100%;
