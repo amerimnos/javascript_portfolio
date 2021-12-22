@@ -1796,7 +1796,8 @@ header {
 /* === join page end ===*/
 /* === youtube page start ===*/
 .youtubeBody {
-  background: linear-gradient(45deg, #e4ddca, #d4d2ae); }
+  /* background: radial-gradient(ellipse at left top, #e5deca, transparent), radial-gradient(ellipse at bottom, #aba567, transparent), radial-gradient(ellipse at right top, #ffffff, transparent); */
+  background: radial-gradient(ellipse at left top, #ffe3e3, transparent), radial-gradient(ellipse at right top, #c58eff, transparent), radial-gradient(ellipse at bottom left, #00d3ff, transparent), radial-gradient(ellipse at bottom right, #ffde00, transparent); }
 
 .youtubeConts {
   display: flex;
@@ -1807,7 +1808,7 @@ header {
   flex-wrap: wrap;
   border-radius: 7px;
   background: #fff;
-  box-shadow: 9px 9px 11px 0px #cccbb1; }
+  box-shadow: 9px 9px 11px 0px #00000026; }
   .youtubeConts * {
     font-family: "Bitter", serif; }
   .youtubeConts .leftTxt {
