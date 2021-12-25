@@ -2266,18 +2266,18 @@ header {
 
 /* === youtube page start ===*/
 .youtubeBody {
-    /* background: radial-gradient(ellipse at left top, #e5deca, transparent), radial-gradient(ellipse at bottom, #aba567, transparent), radial-gradient(ellipse at right top, #ffffff, transparent); */
-    background: radial-gradient(ellipse at left top, #ffe3e3, transparent), radial-gradient(ellipse at right top, #c58eff, transparent),radial-gradient(ellipse at bottom left, #00d3ff, transparent), radial-gradient(ellipse at bottom right, #ffde00, transparent);}
+	background: radial-gradient(ellipse at left top, #ffe3e3, transparent),
+		radial-gradient(ellipse at right top, #c58eff, transparent),
+		radial-gradient(ellipse at bottom left, #00d3ff, transparent),
+		radial-gradient(ellipse at bottom right, #ffde00, transparent);
+}
 .youtubeConts {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    height: 1450px;
-    margin: 100px auto;
-    flex-wrap: wrap;
-    border-radius: 7px;
-    background: #fff;
-    box-shadow: 9px 9px 11px 0px #00000026;
+	display: flex;
+	width: 1200px;
+	margin: 100px auto;
+	border-radius: 7px;
+	background: #fff;
+	box-shadow: 9px 9px 11px 0px #00000026;
 	* {
 		font-family: "Bitter", serif;
 	}
@@ -2325,7 +2325,7 @@ header {
 		}
 	}
 	.titConts {
-		width: 32.4%;
+		width: 100%;
 		.search {
 			text-align: right;
 			font-style: italic;
@@ -2345,7 +2345,7 @@ header {
 			padding: 0 0 7px 24px;
 		}
 		.tit {
-			padding: 0 0 39px 21px;
+			padding: 0 0 45px 21px;
 			font-size: 48px;
 			font-weight: 500;
 			letter-spacing: -1.5px;
@@ -2354,23 +2354,78 @@ header {
 		}
 		.more {
 			display: flex;
-			padding: 0 0 88px 20px;
+			padding: 0 0 88px 24px;
 			font-size: 15px;
 			font-weight: 550;
 			align-items: center;
+			.icon {
+				position: relative;
+				width: 27px;
+				height: 27px;
+				margin-right: 21px;
+				border: solid 1px #000;
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					left: calc(50% - 22.5%);
+					top: calc(50% - 1px);
+					width: 45%;
+					height: 1px;
+					background-color: #353535;
+				}
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					left: calc(50% - 1px);
+					top: calc(50% - 22.5%);
+					width: 1px;
+					height: 45%;
+					transform-origin: center;
+					background-color: #353535;
+				}
+			}
 			span {
 				padding-right: 15px;
 				font-size: 33px;
 			}
 		}
 	}
+	.divide {
+	}
+	> div:nth-of-type(1) {
+		width: 32.5%;
+	}
+	> div:nth-of-type(2) {
+		width: 26.1%;
+	}
+	> div:nth-of-type(3) {
+		width: 26.1%;
+	}
+	> div:nth-of-type(1) > div {
+		margin: 0 0 37.3px 109.3px;
+		padding: 0;
+		width: calc(100% - 109.3px);
+		.bg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	> div:nth-of-type(2) > div:nth-of-type(1) {
+		height: 305px;
+	}
+	> div:nth-of-type(3) > div:nth-of-type(1) {
+		margin-top: 86px;
+		height: 495px;
+	}
 	.videoConts {
-    width: 26.3%;
-    height: 475px;
-    margin-left: auto;
-    padding: 0 0 37.3px 37.3px;
-    position: relative;
-    color: #fff;
+		width: 100%;
+		height: 475px;
+		margin-left: auto;
+		padding: 0 0 37.3px 37.3px;
+		position: relative;
+		color: #fff;
 		.tit {
 			position: relative;
 			padding: 19px 19px 4px 19px;
@@ -2395,23 +2450,7 @@ header {
 			background: rgba(0, 0, 0, 0.4);
 		}
 	}
-	> div:nth-of-type(1) {
-		height:370px;
-	}
-	> div:nth-of-type(2) {
-	}
-	> div:nth-of-type(3) {
-		height:305px;
-	}
-	> div:nth-of-type(4) {
 
-	}
-	> div:nth-of-type(5) {
-	}
-	> div:nth-of-type(6) {
-    margin-top: 84px;
-    height: 496px;
-	}
 	.rightTxt {
 		display: flex;
 		width: 7%;
@@ -2875,7 +2914,7 @@ header {
 		}
 	}
 
-	/* === about page start ===*/
+	/* === $xl about page start ===*/
 	.aboutConts1 {
 		width: calc(100% - 40px);
 		margin: 100px 20px;
@@ -3031,7 +3070,7 @@ header {
 	}
 	/* === about page end ===*/
 
-	/* === community page start ===*/
+	/* === $xl community page start ===*/
 	.commuConts1 {
 		&::before {
 		}
@@ -3431,7 +3470,7 @@ header {
 		}
 	}
 
-	/* === about page start ===*/
+	/* === $lg about page start ===*/
 	.aboutConts1 {
 		margin: 80px 20px;
 		.leftConts {
@@ -3601,7 +3640,7 @@ header {
 	}
 	/* === about page end ===*/
 
-	/* === community page start ===*/
+	/* === $lg community page start ===*/
 	.commuConts1 {
 		&::before {
 		}
@@ -3781,7 +3820,7 @@ header {
 	}
 	/* === community page end ===*/
 
-	/* === join page start ===*/
+	/* === $lg join page start ===*/
 	.joinConts1 {
 		width: 100%;
 		margin: 80px auto;
@@ -3925,6 +3964,86 @@ header {
 		}
 	}
 	/* === join page end ===*/
+
+	/* === $lg youtube page start ===*/
+	.youtubeBody {
+		background: initial;
+	}
+	.youtubeConts {
+		width: 100%;
+		height: 1300px;
+		margin: 0px auto 40px;
+		border-radius: initial;
+		box-shadow: initial;
+		* {
+		}
+		> article,
+		> div {
+		}
+		.leftTxt {
+			.logo {
+			}
+			.middleTxt {
+				&::before {
+				}
+			}
+			.bottomTxt {
+			}
+		}
+		.titConts {
+			.search {
+			}
+			i {
+			}
+			p {
+			}
+			.tit {
+			}
+			.more {
+				.icon {
+					&::before {
+					}
+					&::after {
+					}
+				}
+				span {
+				}
+			}
+		}
+		.videoConts {
+			.tit {
+			}
+			p {
+			}
+			.bg {
+			}
+		}
+		.divide {
+		}
+		> div:nth-of-type(1) {
+		}
+		> div:nth-of-type(2) {
+		}
+		> div:nth-of-type(3) {
+		}
+		> div:nth-of-type(1) > div {
+			.bg {
+			}
+		}
+		> div:nth-of-type(2) > div:nth-of-type(1) {
+		}
+		> div:nth-of-type(3) > div:nth-of-type(1) {
+		}
+		.rightTxt {
+			.topTxt {
+			}
+			.sns {
+			}
+			.bottomTxt {
+			}
+		}
+	}
+	/* === youtube page end ===*/
 
 	.footer {
 		&__tit {
@@ -4235,7 +4354,7 @@ header {
 		}
 	}
 
-	/* === about page start ===*/
+	/* === $md about page start ===*/
 	.aboutConts1 {
 		margin: 60px 20px 60px;
 		display: block;
@@ -4441,7 +4560,7 @@ header {
 	}
 	/* === about page end ===*/
 
-	/* === community page start ===*/
+	/* === $md community page start ===*/
 	.commuConts1 {
 		height: calc(100vh - 60px);
 		&::before {
@@ -4641,7 +4760,7 @@ header {
 	}
 	/* === community page end ===*/
 
-	/* === join page start ===*/
+	/* === $md join page start ===*/
 	.joinConts1 {
 		.info {
 			width: 90%;
@@ -4785,6 +4904,91 @@ header {
 		}
 	}
 	/* === join page end ===*/
+
+	/* === $md youtube page start ===*/
+	.youtubeBody {
+	}
+	.youtubeConts {
+		width: 100%;
+		height: 100vh;
+		* {
+		}
+		> article,
+		> div {
+		}
+		.leftTxt {
+			.logo {
+			}
+			.middleTxt {
+				&::before {
+				}
+			}
+			.bottomTxt {
+			}
+		}
+		.titConts {
+			.search {
+				padding: 3vw 6px 8vw 0;
+			}
+			i {
+			}
+			p {
+			}
+			.tit {
+				font-size: 4.7vw;
+			}
+			.more {
+				padding: 0 0 8vw 3vw;
+				.icon {
+					&::before {
+					}
+					&::after {
+					}
+				}
+				span {
+				}
+			}
+		}
+		.videoConts {
+			height: 27vh;
+			padding: 0 0 3vw 3vw;
+			.tit {
+			}
+			p {
+			}
+			.bg {
+				width: calc(100% - 3vw);
+				height: calc(100% - 3vw);
+			}
+		}
+		.divide {
+		}
+		> div:nth-of-type(1) {
+		}
+		> div:nth-of-type(2) {
+		}
+		> div:nth-of-type(3) {
+		}
+		> div:nth-of-type(1) > div {
+			margin: 0 0 5vw 10vw;
+			width: calc(100% - 10vw);
+			.bg {
+			}
+		}
+		> div:nth-of-type(2) > div:nth-of-type(1) {
+		}
+		> div:nth-of-type(3) > div:nth-of-type(1) {
+		}
+		.rightTxt {
+			.topTxt {
+			}
+			.sns {
+			}
+			.bottomTxt {
+			}
+		}
+	}
+	/* === youtube page end ===*/
 
 	.footer {
 		&__tit {
@@ -5086,7 +5290,7 @@ header {
 		}
 	}
 
-	/* === about page start ===*/
+	/* === $sm about page start ===*/
 	.aboutConts1 {
 		margin: 60px 20px 60px;
 		display: block;
@@ -5314,7 +5518,7 @@ header {
 	}
 	/* === about page end ===*/
 
-	/* === community page start ===*/
+	/* === $sm community page start ===*/
 	.commuConts1 {
 		&::before {
 		}
@@ -5515,7 +5719,7 @@ header {
 	}
 	/* === community page end ===*/
 
-	/* === join page start ===*/
+	/* === $sm join page start ===*/
 	.joinConts1 {
 		margin: 60px auto;
 		.info {
@@ -5661,6 +5865,215 @@ header {
 		}
 	}
 	/* === join page end ===*/
+
+	/* === $sm youtube page start ===*/
+	.youtubeBody {
+	}
+	.youtubeConts {
+		flex-wrap: wrap;
+		height: initial;
+		margin-bottom: 30px;
+		* {
+		}
+		> article,
+		> div {
+		}
+		.leftTxt {
+			height: 50px;
+			flex-direction: row;
+			justify-content: space-around;
+			width: 100%;
+			border-bottom: dotted 1px #868686;
+			box-shadow: 0px 5px 10px #dbdbdb;
+			.logo {
+				align-self: initial;
+				margin: 0;
+			}
+			.middleTxt {
+				display: flex;
+				order: 1;
+				margin: 0;
+				writing-mode: initial;
+				transform: initial;
+				align-items: center;
+				&::before {
+					position: initial;
+					width: 6vw;
+					height: 1px;
+					margin-right: 11px;
+				}
+			}
+			.bottomTxt {
+				margin: 0;
+				transform: initial;
+				writing-mode: initial;
+			}
+		}
+		.titConts {
+			width: 50%;
+			.search {
+			}
+			i {
+			}
+			p {
+			}
+			.tit {
+				font-size: 6vw;
+			}
+			.more {
+				.icon {
+					&::before {
+					}
+					&::after {
+					}
+				}
+				span {
+				}
+			}
+		}
+
+		.divide {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.videoConts {
+			border-top: solid 1px #000;
+			border-left: solid 1px #000;
+			.tit {
+			}
+			p {
+			}
+			.bg {
+			}
+		}
+
+		> div:nth-of-type(1) {
+			width: 100%;
+			> div {
+				width: 50%;
+				height: initial;
+				margin: 0;
+				padding: 0;
+				.tit {
+					padding: 15px 0 5px 15px;
+				}
+				p {
+					padding-left: 15px;
+				}
+				.bg {
+				}
+			}
+			> div:last-child {
+				width: 100%;
+				.tit {
+					padding-top: 30vw;
+				}
+				p {
+					padding-bottom: 15px;
+				}
+			}
+		}
+
+		> div:nth-of-type(2) {
+			width: 100%;
+			height: initial;
+			> div {
+				width: 50%;
+				height: 33vw;
+				margin: 0;
+				padding: 0;
+				.tit {
+					padding: 15px 0 5px 15px;
+				}
+				p {
+					padding-left: 15px;
+				}
+				.bg {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			> div:nth-of-type(1) {
+				height: 33vw;
+			}
+			> div:last-child {
+				width: 100%;
+				.tit {
+					padding-top: 20vw;
+				}
+				p {
+					padding-bottom: 15px;
+				}
+			}
+		}
+
+		> div:nth-of-type(3) {
+			width: 100%;
+			height: initial;
+			> div {
+				width: 50%;
+				height: 30vw;
+				margin: 0;
+				padding: 0;
+				.tit {
+					padding: 15px 0 5px 15px;
+				}
+				p {
+					padding-left: 15px;
+				}
+				.bg {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			> div:nth-of-type(1) {
+				width: 50%;
+				height: 30vw;
+				margin-top: 0;
+			}
+			> div:last-child {
+				width: 50%;
+				height: 30vw;
+				.tit {
+					padding: 15px 0 5px 15px;
+				}
+				p {
+					padding-left: 15px;
+				}
+				.bg {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+		.rightTxt {
+			width: 100%;
+			height: 15vw;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+
+			.topTxt {
+				margin: 0;
+				font-size: 16px;
+				writing-mode: initial;
+			}
+			.sns {
+				width: 15vw;
+				flex-direction: row;
+				height: initial;
+				align-items: center;
+				justify-content: space-between;
+				margin: 0;
+			}
+			.bottomTxt {
+				writing-mode: initial;
+			}
+		}
+	}
+	/* === youtube page end ===*/
 
 	.footer {
 		&__tit {
@@ -6684,9 +7097,155 @@ header {
 	}
 	/* === join page end ===*/
 
+	/* === $xs youtube page start ===*/
+	.youtubeBody {
+	}
+	.youtubeConts {
+		* {
+		}
+		> article,
+		> div {
+		}
+		.leftTxt {
+			height: initial;
+			justify-content: space-between;
+			padding: 14px 15px;
+			.logo {
+			}
+			.middleTxt {
+				&::before {
+				}
+			}
+			.bottomTxt {
+				display: none;
+			}
+		}
+		.titConts {
+			width: 100%;
+			.search {
+			}
+			i {
+			}
+			p {
+			}
+			.tit {
+				font-size: 13vw;
+			}
+			.more {
+				padding: 0 0 20px 20px;
+				.icon {
+					&::before {
+					}
+					&::after {
+					}
+				}
+				span {
+				}
+			}
+		}
+
+		.divide {
+			width: 100%;
+		}
+		.videoConts {
+			width: 100%;
+			height: 43vw;
+			.tit {
+			}
+			p {
+			}
+			.bg {
+			}
+		}
+
+		> div:nth-of-type(1) {
+			width: 100%;
+			> div {
+				width: 100%;
+				height: 43vw;
+				.tit {
+				}
+				p {
+				}
+				.bg {
+				}
+			}
+			> div:last-child {
+				.tit {
+					padding: 15px 0 5px 15px;
+				}
+				p {
+				}
+			}
+		}
+
+		> div:nth-of-type(2) {
+			> div {
+				width: 100%;
+				height: 43vw;
+				.tit {
+				}
+				p {
+				}
+				.bg {
+				}
+			}
+			> div:nth-of-type(1) {
+				height: 43vw;
+			}
+			> div:last-child {
+				width: 100%;
+				.tit {
+					padding: 15px 0 5px 15px;
+				}
+				p {
+				}
+			}
+		}
+
+		> div:nth-of-type(3) {
+			> div {
+				width: 100%;
+				height: 43vw;
+				.tit {
+				}
+				p {
+				}
+				.bg {
+				}
+			}
+			> div:nth-of-type(1) {
+				width: 100%;
+				height: 43vw;
+			}
+			> div:last-child {
+				width: 100%;
+				height: 43vw;
+				.tit {
+				}
+				p {
+				}
+				.bg {
+				}
+			}
+		}
+
+		.rightTxt {
+			height: 10vw;
+			.topTxt {
+			}
+			.sns {
+				display: none;
+			}
+			.bottomTxt {
+			}
+		}
+	}
+	/* === youtube page end ===*/
+
 	.footer {
 		&__tit {
-			padding: 0 10px;
+			padding: 10px;
 		}
 
 		&__menu-wrap {
