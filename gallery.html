@@ -16,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:wght@300..800&family=Lora:wght@400..700&display=swap">
-    
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Bitter:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/85c316acd7.js" crossorigin="anonymous"></script>
@@ -27,9 +26,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
     <script defer src="js/script.js"></script>
+
 </head>
 
-<body>
+<body class="youtubeBody">
 
     <header>
         <nav class="nav">
@@ -112,7 +112,9 @@
                     </ul>
                 </li>
             </ul>
-            <a class="nav__contactUs" href="#"><span class="material-icons-outlined">contact_support</span></a>
+            <a class="nav__contactUs" href="#">
+                <span class="material-icons-outlined">contact_support</span>
+            </a>
             <a class="nav__login" href="join.html">
                 <div class="circleWave">
                     <i class="fas fa-user-circle circleWave__btn"></i>
@@ -203,217 +205,36 @@
             </ul>
         </div>
     </header>
-    <section class="commuConts1">
-        <div class="blur"></div>
-        <div class="txt">LOREM</div>
-        <h2>IPSUM</h2>
-        <div class="txtBox">
-            <h3>qui excepturi quam.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est id repellendus, recusandae suscipit ipsam
-                dolore excepturi ab non debitis delectus placeat atque dolorum sunt iure cum labore! Natus quis
-                voluptatibus qui excepturi quam. Consequatur ea unde, perferendis ab dolore officia?</p>
-        </div>
-    </section>
-    <section class="commuConts2">
-        <h1 class="tit">Notice</h1>
-        <p class="subTxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet quidem obcaecati
-            nobis voluptatem hic.</p>
-        <div class="inputWrap">
-            <input type="text" name="search" id="" placeholder="Search for Title." />
-            <i class="fas fa-search"></i>
-        </div>
-        <table class="noticeTable">
-            <caption>notice table</caption>
-            <thead>
-                <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">File</th>
-                    <th scope="col">date</th>
-                </tr>
-            </thead>
-            <tbody>
 
-                <tr>
-                    <td>8</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati est voluptates officia,
-                        excepturi placeat delectus molestias deleniti similique itaque alias!</td>
-                    <td><i class="far fa-file"></i></td>
-                    <td>2021.12.14</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, atque perferendis accusamus
-                        fugit rerum non.</td>
-                    <td><i class="far fa-file"></i></td>
-                    <td>2021.12.14</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
-                    <td><i class="far fa-file"></i></td>
-                    <td>2021.12.14</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
-                    <td><i class="far fa-file"></i></td>
-                    <td>2021.12.14</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
-                    <td><i class="far fa-file"></i></td>
-                    <td>2021.12.14</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
-                    <td><i class="far fa-file"></i></td>
-                    <td>2021.12.14</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
-                    <td><i class="far fa-file"></i></td>
-                    <td>2021.12.14</td>
-                </tr>
-            </tbody>
-        </table>
-        <ul class="pagiNation">
-            <li class="first"><i class="fas fa-angle-double-left"></i></li>
-            <li class="prev"><i class="fas fa-angle-left"></i></li>
-            <li class="num">1</li>
-            <li class="num">2</li>
-            <li class="num">3</li>
-            <li class="next"><i class="fas fa-angle-right"></i></li>
-            <li class="last"><i class="fas fa-angle-double-right"></i></li>
+    <section class="galleryConts">
+        <div class="tit">
+            <h1>Gallery</h1>
+        </div>
+        <ul class="tab">
+            <li>All</li>
+            <li>Love</li>
+            <li>Hope</li>
+            <li>Mind</li>
+            <li>Mountain</li>
+            <li class="date">2018 <span class="line"></span> 2022</li>
         </ul>
-
-    </section>
-    <section class="commuConts3">
-        <div class="inner">
-            <h1>Service Q&A</h1>
-            <ul>
-                <li class="quest">
-                    <span>Q</span>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
-                    <p></p>
-                </li>
-                <li class="answer">
-                    <span>A</span>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, modi dicta repudiandae eveniet
-                        consequuntur totam accusamus fugiat, enim provident officia incidunt, quam odit amet! Odit.
-                    </div>
-                </li>
-                <li class="quest">
-                    <span>Q</span>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
-                    <p></p>
-                </li>
-                <li class="answer">
-                    <span>A</span>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, modi dicta repudiandae eveniet
-                        consequuntur totam accusamus fugiat, enim provident officia incidunt, quam odit amet! Odit.
-                    </div>
-                </li>
-                <li class="quest">
-                    <span>Q</span>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
-                    <p></p>
-                </li>
-                <li class="answer">
-                    <span>A</span>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, modi dicta repudiandae eveniet
-                        consequuntur totam accusamus fugiat, enim provident officia incidunt, quam odit amet! Odit.
-                    </div>
+        <article class="item">
+            <ul class="left">
+                <li>PROMO SITE FOR AIRBUS</li>
+                <li>
+                    <span class="year">2018</span>
+                    <span class="subTit">Love</span>
                 </li>
             </ul>
-        </div>
+            <div class="img">
+                <img src="http://via.placeholder.com/600x300" alt="">
+            </div>
+            <ul class="right">
+                <li>VIEW THE <span class="line"></span> IMAGE</li>
+            </ul>
+            <div class="tit">S7 Airlines</div>
+        </article>
     </section>
-    <section class="commuConts4">
-        <h1>The composition of the service</h1>
-        <h2>sollicitudin ac</h2>
-        <ul class="diagram">
-            <li class="item1">
-                <p>LOREM</p>
-                <ul class="iconWrap">
-                    <li>
-                        <i class="fas fa-mobile-alt"></i>
-                        <div>Lorem ium</div>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone"></i>
-                        <div>Lorem sum</div>
-                    </li>
-                    <li>
-                        <i class="fas fa-tv"></i>
-                        <div>Lorem ips</div>
-                    </li>
-                </ul>
-            </li>
-            <li class="line1"></li>
-            <li class="item2">
-                <div>1855</div>
-                <p>Lorem, ipsum</p>
-            </li>
-            <li class="line2"></li>
-            <li class="item3">
-                <p>LOREM</p>
-                <ul class="iconWrap">
-                    <li>
-                        <i class="far fa-building"></i>
-                        <div>Lorem, ipsum</div>
-                    </li>
-                    <li>
-                        <i class="fas fa-map-marked"></i>
-                        <div>Lorem, ipsum</div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <section class="commuConts5">
-        <h1>Company plan
-            <span>labore et dolore magna aliqua.</span>
-        </h1>
-        <table class="fareTable">
-            <caption>서비스 요금 안내</caption>
-            <thead>
-                <tr>
-                    <th scope="col">lorem</th>
-                    <th scope="col">lorem</th>
-                    <th scope="col">lorem</th>
-                    <th scope="col">lorem</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2">lorem</td>
-                    <td rowspan="2">lorem</td>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                </tr>
-                <tr>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                </tr>
-                <tr>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                    <td>lorem</td>
-                </tr>
-            </tbody>
-        </table>
-        <ul class="listStyle1">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        </ul>
-    </section>
-
-
 
     <footer class="footer">
         <div class="footer__tit">Lorem ipsum dolor sit amet consectetur adipisicing</div>

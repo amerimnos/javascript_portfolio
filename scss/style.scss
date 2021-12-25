@@ -2484,6 +2484,97 @@ header {
 }
 /* === youtube page end ===*/
 
+/* === youtube page start ===*/
+.galleryConts{
+    width: 960px;
+    margin: 0 auto;
+    .tit{
+        display: flex;
+        padding: 140px 0 200px 0;
+        font-size: 200px;
+        &::before{
+            content: '02';
+            font-style: italic;
+            font-size: 40px;
+        }
+    }
+    .tab{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+
+        li{
+            color: #bbb; 
+            font-size: 15px;
+            margin-right: 20px;
+        }
+
+        .data{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            font-size: 40px;
+            color: #000;
+            font-style: italic;
+            .line{
+                width: 2px;
+                height: 80px;
+                margin:0 30px;
+            }
+        }
+    }
+
+    .item{
+        position: relative;
+        display: flex;
+        align-items: stretch;
+        padding: 50px 0;
+        border-bottom: 1px solid #000;
+        .left{
+            width: 25%;
+            li:first-child{
+                padding-bottom: 300px;
+                font-size: 18px;
+            }
+            li:last-child{
+                font-size: 15px;
+            }
+        }
+        .img{
+            padding: 60px 0;
+            img{
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        .right{
+            font-size: 20px;
+            display: flex;
+            align-items: flex-end;
+            li{
+                display: flex;
+                align-items: center;
+            }
+            .line{
+                width: 30px;
+                height: 1px;
+                background: #000;
+            }
+        }
+        .tit{
+            position: absolute;
+            top:50%;
+            transform:translateY(-50%);
+            font-size: 80px;
+            font-weight: 700;
+        }
+    }
+}
+/* === youtube page end ===*/
+
+
 .footer {
 	position: relative;
 	width: 100%;

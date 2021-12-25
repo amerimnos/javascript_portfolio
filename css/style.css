@@ -1973,6 +1973,76 @@ header {
       writing-mode: vertical-lr; }
 
 /* === youtube page end ===*/
+/* === youtube page start ===*/
+.galleryConts {
+  width: 960px;
+  margin: 0 auto; }
+  .galleryConts .tit {
+    display: flex;
+    padding: 140px 0 200px 0;
+    font-size: 200px; }
+    .galleryConts .tit::before {
+      content: '02';
+      font-style: italic;
+      font-size: 40px; }
+  .galleryConts .tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000; }
+    .galleryConts .tab li {
+      color: #bbb;
+      font-size: 15px;
+      margin-right: 20px; }
+    .galleryConts .tab .data {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      font-size: 40px;
+      color: #000;
+      font-style: italic; }
+      .galleryConts .tab .data .line {
+        width: 2px;
+        height: 80px;
+        margin: 0 30px; }
+  .galleryConts .item {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    padding: 50px 0;
+    border-bottom: 1px solid #000; }
+    .galleryConts .item .left {
+      width: 25%; }
+      .galleryConts .item .left li:first-child {
+        padding-bottom: 300px;
+        font-size: 18px; }
+      .galleryConts .item .left li:last-child {
+        font-size: 15px; }
+    .galleryConts .item .img {
+      padding: 60px 0; }
+      .galleryConts .item .img img {
+        object-fit: cover;
+        width: 100%; }
+    .galleryConts .item .right {
+      font-size: 20px;
+      display: flex;
+      align-items: flex-end; }
+      .galleryConts .item .right li {
+        display: flex;
+        align-items: center; }
+      .galleryConts .item .right .line {
+        width: 30px;
+        height: 1px;
+        background: #000; }
+    .galleryConts .item .tit {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 80px;
+      font-weight: 700; }
+
+/* === youtube page end ===*/
 .footer {
   position: relative;
   width: 100%;
