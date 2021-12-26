@@ -1974,38 +1974,61 @@ header {
 
 /* === youtube page end ===*/
 /* === youtube page start ===*/
+.galleryBg {
+  background: linear-gradient(90deg, #ffffff 21px, transparent 1%) center, linear-gradient(#ffffff 21px, transparent 1%) center, #a799cc;
+  background-size: 22px 22px; }
+
 .galleryConts {
   width: 960px;
-  margin: 0 auto; }
-  .galleryConts .tit {
+  margin: 0 auto 100px; }
+  .galleryConts .mainTitle {
     display: flex;
-    padding: 140px 0 200px 0;
-    font-size: 200px; }
-    .galleryConts .tit::before {
-      content: '02';
+    padding: 103px 0 105px 5px;
+    font-size: 89px;
+    font-family: lora;
+    line-height: 1; }
+    .galleryConts .mainTitle h1 {
+      font-weight: 500;
+      letter-spacing: 1.5px; }
+    .galleryConts .mainTitle::before {
+      content: "02";
+      margin-top: 33px;
+      padding-right: 123px;
       font-style: italic;
-      font-size: 40px; }
+      font-size: 41px;
+      letter-spacing: 5px;
+      font-family: "Bitter"; }
   .galleryConts .tab {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #000; }
+    align-items: center;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #000;
+    font-weight: 610; }
     .galleryConts .tab li {
       color: #bbb;
-      font-size: 15px;
+      font-size: 14px;
       margin-right: 20px; }
-    .galleryConts .tab .data {
+      .galleryConts .tab li.on {
+        color: #000; }
+    .galleryConts .tab .date {
       display: flex;
       align-items: center;
       margin-left: auto;
-      font-size: 40px;
+      margin-right: 40px;
+      font-size: 38px;
       color: #000;
-      font-style: italic; }
-      .galleryConts .tab .data .line {
-        width: 2px;
-        height: 80px;
-        margin: 0 30px; }
+      font-style: italic;
+      line-height: 29px;
+      font-family: "Lora";
+      letter-spacing: -2.7px;
+      font-weight: 300;
+      transform: skewX(346deg) scaleX(1.3); }
+      .galleryConts .tab .date .line {
+        width: 44px;
+        height: 2px;
+        background-color: #000;
+        margin: 0 15px; }
   .galleryConts .item {
     position: relative;
     display: flex;
@@ -2013,34 +2036,68 @@ header {
     padding: 50px 0;
     border-bottom: 1px solid #000; }
     .galleryConts .item .left {
-      width: 25%; }
-      .galleryConts .item .left li:first-child {
-        padding-bottom: 300px;
-        font-size: 18px; }
-      .galleryConts .item .left li:last-child {
-        font-size: 15px; }
-    .galleryConts .item .img {
-      padding: 60px 0; }
-      .galleryConts .item .img img {
-        object-fit: cover;
-        width: 100%; }
-    .galleryConts .item .right {
-      font-size: 20px;
       display: flex;
-      align-items: flex-end; }
+      width: 19%;
+      height: 300px;
+      white-space: nowrap;
+      z-index: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #505050; }
+      .galleryConts .item .left li:first-child {
+        font-weight: 650;
+        font-size: 12px; }
+      .galleryConts .item .left li:last-child {
+        height: 22px;
+        display: flex;
+        font-size: 15px; }
+        .galleryConts .item .left li:last-child .year {
+          display: flex;
+          font-style: italic;
+          font-weight: 550;
+          font-family: "Bitter"; }
+          .galleryConts .item .left li:last-child .year::after {
+            content: "/";
+            display: block;
+            margin: 0px 4px;
+            color: #bbbbbb; }
+        .galleryConts .item .left li:last-child .subTit {
+          display: flex;
+          font-size: 12.5px;
+          font-weight: 600;
+          align-items: flex-end; }
+    .galleryConts .item .img {
+      width: 52%;
+      height: 300px; }
+      .galleryConts .item .img img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%; }
+    .galleryConts .item .right {
+      width: 29%;
+      margin-right: 5px;
+      font-size: 13px;
+      font-weight: 510;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end; }
       .galleryConts .item .right li {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        color: #505050;
+        font-weight: 610; }
       .galleryConts .item .right .line {
-        width: 30px;
+        width: 57px;
         height: 1px;
+        margin: 0 10px;
         background: #000; }
     .galleryConts .item .tit {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 80px;
-      font-weight: 700; }
+      font-size: 47px;
+      font-weight: 550; }
 
 /* === youtube page end ===*/
 .footer {
@@ -3049,6 +3106,44 @@ header {
       width: calc(100% - 10vw); }
 
   /* === youtube page end ===*/
+  /* === $md youtube page start ===*/
+  .galleryConts {
+    width: 100%;
+    margin: 0;
+    padding: 0px 10px 13vw; }
+    .galleryConts .mainTitle {
+      padding: 15vw 0 14vw 0;
+      font-size: 10vw; }
+      .galleryConts .mainTitle::before {
+        margin-top: 1vw;
+        padding-right: 15vw;
+        font-size: 5.7vw; }
+    .galleryConts .tab .date {
+      margin-right: 35px;
+      font-size: 4.9vw;
+      line-height: 3.7vw;
+      transform: skewX(346deg) scaleX(1.3); }
+      .galleryConts .tab .date .line {
+        width: 5.8vw;
+        margin: 0 1.4vw; }
+    .galleryConts .item {
+      padding: 6.2vw 0; }
+      .galleryConts .item .left {
+        height: inherit;
+        width: 26%; }
+      .galleryConts .item .img {
+        width: 50%;
+        height: 31vw; }
+      .galleryConts .item .right {
+        width: 24%;
+        margin-right: 0; }
+        .galleryConts .item .right .line {
+          width: 2vw;
+          margin: 0 5px; }
+      .galleryConts .item .tit {
+        font-size: 6.4vw; }
+
+  /* === $md youtube page end ===*/
   .footer__tit {
     padding: 20px 0; }
   .footer__menu-wrap {
@@ -4134,6 +4229,42 @@ header {
       display: none; }
 
   /* === youtube page end ===*/
+  /* === $xs youtube page start ===*/
+  .galleryConts .mainTitle {
+    padding: 14vw 0 23vw 0; }
+  .galleryConts .tab {
+    position: relative;
+    justify-content: space-around; }
+    .galleryConts .tab li:nth-of-type(5) {
+      margin-right: 0; }
+    .galleryConts .tab .date {
+      position: absolute;
+      left: 50%;
+      top: -15vw;
+      transform: translateX(-50%);
+      font-size: 6vw;
+      letter-spacing: -1px; }
+  .galleryConts .item {
+    flex-wrap: wrap; }
+    .galleryConts .item .left {
+      display: flex;
+      width: 30%;
+      white-space: nowrap;
+      z-index: 1;
+      flex-direction: column;
+      justify-content: space-between; }
+    .galleryConts .item .img {
+      width: 70%; }
+    .galleryConts .item .right {
+      width: 100%;
+      margin-top: 2.5vw; }
+      .galleryConts .item .right .line {
+        width: 10vw; }
+    .galleryConts .item .tit {
+      top: 43%;
+      font-size: 6.4vw; }
+
+  /* === $xs youtube page end ===*/
   .footer__tit {
     padding: 10px; }
   .footer__menu-wrap {
