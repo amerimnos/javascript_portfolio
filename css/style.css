@@ -1973,7 +1973,7 @@ header {
       writing-mode: vertical-lr; }
 
 /* === youtube page end ===*/
-/* === youtube page start ===*/
+/* === gallery page start ===*/
 .galleryBg {
   background: linear-gradient(90deg, #ffffff 21px, transparent 1%) center, linear-gradient(#ffffff 21px, transparent 1%) center, #a799cc;
   background-size: 22px 22px; }
@@ -2099,7 +2099,114 @@ header {
       font-size: 47px;
       font-weight: 550; }
 
-/* === youtube page end ===*/
+/* === gallery page end ===*/
+/* === location page start ===*/
+.locationConts .tab {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+  margin: 93px auto -18px;
+  z-index: 4; }
+  .locationConts .tab li {
+    padding: 15px 30px;
+    border: solid 1px #cdcdcd;
+    color: #9f9f9f;
+    background-color: #fff;
+    cursor: pointer; }
+    .locationConts .tab li i {
+      margin-left: 10px; }
+  .locationConts .tab li.on {
+    background: #dcd46f;
+    color: #fff; }
+.locationConts .map {
+  width: 100%;
+  height: 47vh;
+  padding-top: 20px;
+  border-top: solid 1px #ccc;
+  background-color: #dadada; }
+.locationConts .tabConts {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto; }
+  .locationConts .tabConts .inner {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    transform: translateY(-50%);
+    padding: 40px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: repeating-linear-gradient(45deg, transparent, rgba(0, 0, 0, 0.78) 6px);
+    color: #fff; }
+  .locationConts .tabConts .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding-right: 2vw;
+    border-right: solid 1px #fff;
+    font-size: 2vw; }
+  .locationConts .tabConts .right {
+    width: 67%;
+    padding-left: 3vw;
+    line-height: 2; }
+.locationConts .traffic {
+  padding: 130px 100px;
+  background: #f8f8f8; }
+  .locationConts .traffic .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0px auto; }
+  .locationConts .traffic .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7%;
+    font-size: 25px;
+    color: #9a9a9a; }
+    .locationConts .traffic .icon::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 100%;
+      margin-top: 19px;
+      background: #d4d4d4; }
+  .locationConts .traffic .conts {
+    width: 43%; }
+    .locationConts .traffic .conts h2 {
+      font-size: 23px;
+      margin-bottom: 8px;
+      font-weight: 600; }
+    .locationConts .traffic .conts p {
+      font-size: 16px;
+      margin-bottom: 26px;
+      color: gray; }
+    .locationConts .traffic .conts .contsIcon {
+      display: flex;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #4a4a4a;
+      align-items: center; }
+      .locationConts .traffic .conts .contsIcon::before {
+        display: flex;
+        width: 50px;
+        margin-right: 18px;
+        padding: 5px 6px;
+        border-radius: 5px;
+        color: #fff;
+        align-items: center;
+        justify-content: center; }
+    .locationConts .traffic .conts .blue::before {
+      content: "blue";
+      background-color: #1717a5; }
+    .locationConts .traffic .conts .red::before {
+      content: "red";
+      background-color: #890c0c; }
+    .locationConts .traffic .conts .green::before {
+      content: "green";
+      background-color: #075e07; }
+
+/* === location page end ===*/
 .footer {
   position: relative;
   width: 100%;
