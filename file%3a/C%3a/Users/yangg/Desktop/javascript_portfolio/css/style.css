@@ -13,7 +13,7 @@
 /* === Neumorphic style end === */
 /* === reset/common start ===*/
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif; }
@@ -300,9 +300,10 @@ header {
   margin-left: -600px;
   z-index: 2; }
   .main-slideTxt__tit {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     font-size: 52px;
-    font-weight: 300; }
+    font-weight: 300;
+    }
   .main-slideTxt__underline {
     font-size: 17px;
     font-weight: 650;
@@ -2101,71 +2102,19 @@ header {
 
 /* === gallery page end ===*/
 /* === location page start ===*/
-.locationConts * {
-  font-family: "Cormorant", serif; }
-.locationConts .topConts {
-  position: relative;
-  width: 100%;
-  overflow: hidden; }
-  .locationConts .topConts::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8vw;
-    left: 0vw;
-    width: 30vw;
-    height: 30vw;
-    background: radial-gradient(#74747470, transparent 15vw); }
-  .locationConts .topConts::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 24vw;
-    left: 44vw;
-    width: 60vw;
-    height: 60vw;
-    background: radial-gradient(#ceb278a1, transparent 30vw);
-    z-index: -1; }
-  .locationConts .topConts .inner {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 6.8vw 0 7vw 17.2vw; }
-  .locationConts .topConts .tit {
-    font-size: 10.5vw;
-    font-weight: 400;
-    line-height: 0.91; }
-    .locationConts .topConts .tit span {
-      display: block;
-      margin-left: 17.3vw; }
-  .locationConts .topConts .txt1 {
-    position: absolute;
-    width: 15vw;
-    top: 9.2vw;
-    left: 50.3vw;
-    line-height: 1.2;
-    font-size: 1.1vw; }
-  .locationConts .topConts .txt2 {
-    position: absolute;
-    width: 15vw;
-    top: 39.1vw;
-    left: 16.8vw;
-    line-height: 1.2;
-    font-size: 1.1vw; }
 .locationConts .tab {
   position: relative;
   display: flex;
   justify-content: space-evenly;
   width: 600px;
-  margin: -26px auto -26px; }
+  margin: 93px auto -18px;
+  z-index: 4; }
   .locationConts .tab li {
     padding: 15px 30px;
     border: solid 1px #cdcdcd;
     color: #9f9f9f;
     background-color: #fff;
-    cursor: pointer;
-    font-family: "Lora";
-    font-size: 16px; }
+    cursor: pointer; }
     .locationConts .tab li i {
       margin-left: 10px; }
   .locationConts .tab li.on {
@@ -2174,6 +2123,7 @@ header {
 .locationConts .map {
   width: 100%;
   height: 47vh;
+  padding-top: 20px;
   border-top: solid 1px #ccc;
   background-color: #dadada; }
 .locationConts .tabConts {
@@ -2185,7 +2135,7 @@ header {
     width: 100%;
     display: flex;
     transform: translateY(-50%);
-    padding: 28px 50px;
+    padding: 40px 50px;
     background-color: rgba(0, 0, 0, 0.8);
     background-image: repeating-linear-gradient(45deg, transparent, rgba(0, 0, 0, 0.78) 6px);
     color: #fff; }
@@ -2202,13 +2152,12 @@ header {
     padding-left: 3vw;
     line-height: 2; }
 .locationConts .traffic {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 161px 100px 83px;
+  padding: 130px 100px;
   background: #f8f8f8; }
   .locationConts .traffic .inner {
     display: flex;
-    width: 100%; }
+    width: 1200px;
+    margin: 0px auto; }
   .locationConts .traffic .icon {
     display: flex;
     flex-direction: column;
@@ -2232,8 +2181,7 @@ header {
     .locationConts .traffic .conts p {
       font-size: 16px;
       margin-bottom: 26px;
-      font-weight: 640;
-      color: #525252; }
+      color: gray; }
     .locationConts .traffic .conts .contsIcon {
       display: flex;
       margin-bottom: 10px;
@@ -2864,34 +2812,6 @@ header {
     box-shadow: initial; }
 
   /* === youtube page end ===*/
-  /* === $lg location page start ===*/
-  .locationConts * {
-    font-family: "Cormorant", serif; }
-  .locationConts .topConts .tit span {
-    margin-left: 27.3vw; }
-  .locationConts .topConts .txt1 {
-    font-size: 1.6vw;
-    width: 28vw; }
-  .locationConts .topConts .txt2 {
-    font-size: 1.6vw;
-    width: 26vw; }
-  .locationConts .tabConts {
-    width: 100%; }
-    .locationConts .tabConts .left {
-      width: 30%;
-      font-size: 25px; }
-    .locationConts .tabConts .right {
-      width: 70%;
-      font-size: 19px; }
-  .locationConts .traffic {
-    width: 100%; }
-    .locationConts .traffic .conts p {
-      font-size: 18px; }
-    .locationConts .traffic .conts .contsIcon {
-      font-size: 14px;
-      font-family: "Open Sans"; }
-
-  /* === $lg location page end ===*/
   .footer__tit {
     padding: 25px 0; }
   .footer__menu-wrap {
@@ -3332,44 +3252,6 @@ header {
         font-size: 6.4vw; }
 
   /* === $md youtube page end ===*/
-  /* === $md location page start ===*/
-  .locationConts .topConts {
-    padding: 9vw; }
-    .locationConts .topConts::before {
-      top: 14vw;
-      left: -12vw;
-      background: radial-gradient(#91919180, transparent 15vw); }
-    .locationConts .topConts::after {
-      top: 12vw;
-      left: 64vw;
-      background: radial-gradient(#ceb27880, transparent 30vw); }
-    .locationConts .topConts .inner {
-      padding: 0; }
-    .locationConts .topConts .tit {
-      margin-bottom: 52px; }
-      .locationConts .topConts .tit span {
-        display: inline-block;
-        margin-left: 3vw; }
-    .locationConts .topConts .txt1 {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      margin-bottom: 20px;
-      font-size: 2.3vw; }
-    .locationConts .topConts .txt2 {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      font-size: 2.3vw; }
-  .locationConts .tabConts .inner {
-    padding: 20px 50px; }
-  .locationConts .traffic {
-    width: 100%;
-    padding: 112px 20px 52px; }
-
-  /* === $md location page end ===*/
   .footer__tit {
     padding: 20px 0; }
   .footer__menu-wrap {
@@ -3890,17 +3772,6 @@ header {
         writing-mode: initial; }
 
   /* === youtube page end ===*/
-  /* === $sm location page start ===*/
-  .locationConts .topConts .txt1 {
-    font-size: 15px; }
-  .locationConts .topConts .txt2 {
-    font-size: 15px; }
-  .locationConts .tab {
-    width: 100%; }
-  .locationConts .tabConts .inner {
-    padding: 20px 50px; }
-
-  /* === $sm location page end ===*/
   .footer__menu-wrap {
     width: calc(100% - 20px * 2); }
   .footer__menu-tit {
@@ -4502,49 +4373,6 @@ header {
       font-size: 6.4vw; }
 
   /* === $xs youtube page end ===*/
-  /* === $xs location page start ===*/
-  .locationConts .tab {
-    width: 100%;
-    margin: 0; }
-    .locationConts .tab li {
-      width: 32%;
-      text-align: center;
-      padding: 10px;
-      font-size: 13px; }
-      .locationConts .tab li i {
-        margin-left: 5px; }
-  .locationConts .map {
-    height: 70vw; }
-  .locationConts .tabConts .inner {
-    position: initial;
-    flex-direction: column;
-    padding: 20px;
-    transform: initial; }
-  .locationConts .tabConts .left {
-    width: 100%;
-    justify-content: flex-start;
-    padding-bottom: 3px;
-    margin-bottom: 20px;
-    border-bottom: solid 1px #fff;
-    border-right: none; }
-  .locationConts .tabConts .right {
-    width: 100%;
-    padding: 0;
-    line-height: 1.2; }
-  .locationConts .traffic {
-    width: 100%;
-    padding: 47px 10px; }
-    .locationConts .traffic .inner {
-      flex-wrap: wrap; }
-    .locationConts .traffic .icon {
-      width: 12%; }
-      .locationConts .traffic .icon::after {
-        margin-bottom: 13px; }
-    .locationConts .traffic .conts {
-      width: calc(88% - 10px);
-      margin-left: 10px; }
-
-  /* === $xs location page end ===*/
   .footer__tit {
     padding: 10px; }
   .footer__menu-wrap {

@@ -16,18 +16,18 @@ $xs: 575px;
 	--greyLight-1: #e4ebf5;
 	--greyLight-2: #c8d0e7;
 	--greyLight-3: #bec8e4;
-	--greyDark: #9baacf;
+	--greyDark: #9baacf; 
 }
 
 $shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
-	-0.2rem -0.2rem 0.5rem var(--white);
+	-0.2rem -0.2rem 0.5rem var(--white); 
 $inner-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
 	inset -0.2rem -0.2rem 0.5rem var(--white);
 /* === Neumorphic style end === */
 
 /* === reset/common start ===*/
 * {
-	margin: 0px;
+	margin: 0px; 
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Open Sans", sans-serif;
@@ -2640,81 +2640,19 @@ header {
 
 /* === location page start ===*/
 .locationConts {
-	* {
-		font-family: "Cormorant", serif;
-	}
-
-	.topConts {
-    position: relative;
-    width: 100%;
-    overflow:hidden;
-		&::before {
-			content: "";
-			display: block;
-			position: absolute;
-			top: 8vw;
-			left: 0vw;
-			width: 30vw;
-			height: 30vw;
-			background: radial-gradient(#74747470, transparent 15vw);
-		}
-		&::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 24vw;
-    left: 44vw;
-    width: 60vw;
-    height: 60vw;
-    background: radial-gradient(#ceb278a1, transparent 30vw);
-    z-index: -1;
-		}
-		.inner {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 6.8vw 0 7vw 17.2vw;
-		}
-		.tit {
-			font-size: 10.5vw;
-			font-weight: 400;
-			line-height: 0.91;
-			span {
-				display: block;
-				margin-left: 17.3vw;
-			}
-		}
-		.txt1 {
-			position: absolute;
-			width: 15vw;
-			top: 9.2vw;
-			left: 50.3vw;
-			line-height: 1.2;
-			font-size: 1.1vw;
-		}
-		.txt2 {
-			position: absolute;
-			width: 15vw;
-			top: 39.1vw;
-			left: 16.8vw;
-			line-height: 1.2;
-			font-size: 1.1vw;
-		}
-	}
 	.tab {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    width: 600px;
-    margin: -26px auto -26px;
+		position: relative;
+		display: flex;
+		justify-content: space-evenly;
+		width: 600px;
+		margin: 93px auto -18px;
+		z-index: 4;
 		li {
 			padding: 15px 30px;
 			border: solid 1px #cdcdcd;
 			color: #9f9f9f;
 			background-color: #fff;
 			cursor: pointer;
-			font-family: "Lora";
-			font-size: 16px;
 			i {
 				margin-left: 10px;
 			}
@@ -2727,6 +2665,7 @@ header {
 	.map {
 		width: 100%;
 		height: 47vh;
+		padding-top: 20px;
 		border-top: solid 1px #ccc;
 		background-color: #dadada;
 	}
@@ -2739,7 +2678,7 @@ header {
 			width: 100%;
 			display: flex;
 			transform: translateY(-50%);
-			padding: 28px 50px;
+			padding: 40px 50px;
 			background-color: rgba(0, 0, 0, 0.8);
 			background-image: repeating-linear-gradient(
 				45deg,
@@ -2764,13 +2703,12 @@ header {
 		}
 	}
 	.traffic {
-		width: 1200px;
-		margin: 0 auto;
-		padding: 161px 100px 83px;
+		padding: 130px 100px;
 		background: #f8f8f8;
 		.inner {
 			display: flex;
-			width: 100%;
+			width: 1200px;
+			margin: 0px auto;
 		}
 		.icon {
 			display: flex;
@@ -2798,8 +2736,7 @@ header {
 			p {
 				font-size: 16px;
 				margin-bottom: 26px;
-				font-weight: 640;
-				color: #525252;
+				color: gray;
 			}
 			.contsIcon {
 				display: flex;
@@ -4402,93 +4339,6 @@ header {
 	}
 	/* === youtube page end ===*/
 
-	/* === $lg location page start ===*/
-	.locationConts {
-		* {
-			font-family: "Cormorant", serif;
-		}
-
-		.topConts {
-			&::before {
-			}
-			&::after {
-			}
-			.inner {
-			}
-			.tit {
-				span {
-					margin-left: 27.3vw;
-				}
-			}
-			.txt1 {
-				font-size: 1.6vw;
-				width: 28vw;
-			}
-			.txt2 {
-    font-size: 1.6vw;
-    width: 26vw;
-			}
-		}
-		.tab {
-			li {
-				i {
-				}
-			}
-			li.on {
-			}
-		}
-		.map {
-		}
-		.tabConts {
-			width: 100%;
-			.inner {
-			}
-			.left {
-				width: 30%;
-				font-size: 25px;
-			}
-			.right {
-				width: 70%;
-				font-size: 19px;
-			}
-		}
-		.traffic {
-			width: 100%;
-			.inner {
-			}
-			.icon {
-				&::after {
-				}
-			}
-			.conts {
-				h2 {
-				}
-				p {
-					font-size: 18px;
-				}
-				.contsIcon {
-					font-size: 14px;
-					font-family: "Open Sans";
-					&::before {
-					}
-				}
-				.blue {
-					&::before {
-					}
-				}
-				.red {
-					&::before {
-					}
-				}
-				.green {
-					&::before {
-					}
-				}
-			}
-		}
-	}
-	/* === $lg location page end ===*/
-
 	.footer {
 		&__tit {
 			padding: 25px 0;
@@ -5508,103 +5358,6 @@ header {
 		}
 	}
 	/* === $md youtube page end ===*/
-
-	/* === $md location page start ===*/
-	.locationConts {
-		* {
-		}
- 
-		.topConts {
-    padding: 9vw;
-			&::before {
-    top: 14vw;
-    left: -12vw;
-    background: radial-gradient(#91919180, transparent 15vw);
-			}
-			&::after {
-    top: 12vw;
-    left: 64vw;
-    background: radial-gradient(#ceb27880, transparent 30vw);
-			}
-			.inner {
-				padding:0;
-			}
-			.tit {
-    margin-bottom: 52px;
-				span {
-					display:inline-block;
-					margin-left: 3vw;
-				}
-			}
-			.txt1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin-bottom:20px;
-    font-size: 2.3vw;
-			}
-			.txt2 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    font-size: 2.3vw;
-			}
-		}
-		.tab {
-			li {
-				i {
-				}
-			}
-			li.on {
-			}
-		}
-		.map {
-		}
-		.tabConts {
-			.inner {
-                padding: 20px 50px;
-			}
-			.left {
-			}
-			.right {
-			}
-		}
-		.traffic {
-    width: 100%;
-    padding: 112px 20px 52px;
-			.inner {
-			}
-			.icon {
-				&::after {
-				}
-			}
-			.conts {
-				h2 {
-				}
-				p {
-				}
-				.contsIcon {
-					&::before {
-					}
-				}
-				.blue {
-					&::before {
-					}
-				}
-				.red {
-					&::before {
-					}
-				}
-				.green {
-					&::before {
-					}
-				}
-			}
-		}
-	}
-	/* === $md location page end ===*/
 
 	.footer {
 		&__tit {
@@ -6690,82 +6443,6 @@ header {
 		}
 	}
 	/* === youtube page end ===*/
-
-	/* === $sm location page start ===*/
-	.locationConts {
-		* {
-		}
-
-		.topConts {
-			&::before {
-			}
-			&::after {
-			}
-			.inner {
-			}
-			.tit {
-				span {
-				}
-			}
-			.txt1 {
-    font-size: 15px;
-			}
-			.txt2 {
-    font-size: 15px;
-			}
-		}
-		.tab {
-    width:100%;
-			li {
-				i {
-				}
-			}
-			li.on {
-			}
-		}
-		.map {
-		}
-		.tabConts {
-			.inner {
-                padding: 20px 50px;
-			}
-			.left {
-			}
-			.right {
-			}
-		}
-		.traffic {
-			.inner {
-			}
-			.icon {
-				&::after {
-				}
-			}
-			.conts {
-				h2 {
-				}
-				p {
-				}
-				.contsIcon {
-					&::before {
-					}
-				}
-				.blue {
-					&::before {
-					}
-				}
-				.red {
-					&::before {
-					}
-				}
-				.green {
-					&::before {
-					}
-				}
-			}
-		}
-	}
-	/* === $sm location page end ===*/
 
 	.footer {
 		&__tit {
@@ -8010,108 +7687,6 @@ header {
 		}
 	}
 	/* === $xs youtube page end ===*/
-
-	/* === $xs location page start ===*/
-	.locationConts {
-		* {
-		}
-
-		.topConts {
-			&::before {
-			}
-			&::after {
-			}
-			.inner {
-			}
-			.tit {
-				span {
-				}
-			}
-			.txt1 {
-			}
-			.txt2 {
-			}
-		}
-		.tab {
-    width: 100%;
-    margin: 0;
-			li {
-    width: 32%;
-    text-align: center;
-    padding: 10px;
-    font-size: 13px;
-				i {
-    margin-left: 5px;
-				}
-			}
-			li.on {
-			}
-		}
-		.map {
-			height:70vw;
-		}
-		.tabConts {
-			.inner {
-    position: initial;
-    flex-direction: column;
-    padding: 20px;
-    transform: initial;
-			}
-			.left {
-				width:100%;
-                justify-content: flex-start;
-                padding-bottom:3px;
-                margin-bottom: 20px;
-                border-bottom:solid 1px #fff;
-                border-right:none;
-
-			}
-			.right {
-    width: 100%;
-    padding: 0;
-    line-height: 1.2;
-			}
-		}
-		.traffic {
-    width: 100%;
-    padding: 47px 10px;
-			.inner {
-				flex-wrap:wrap;
-			}
-			.icon {
-				width:12%;
-				&::after {
-    margin-bottom: 13px;
-				}
-			}
-			.conts {
-    width: calc(88% - 10px);
-    margin-left: 10px;
-				h2 {
-				}
-				p {
-				}
-				.contsIcon {
-					&::before {
-					}
-				}
-				.blue {
-					&::before {
-					}
-				}
-				.red {
-					&::before {
-					}
-				}
-				.green {
-					&::before {
-					}
-				}
-			}
-		}
-	}
-	/* === $xs location page end ===*/
-	
 
 	.footer {
 		&__tit {
