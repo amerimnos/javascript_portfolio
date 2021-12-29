@@ -151,22 +151,23 @@ for (const el of gnbSubitem) {
 //헤더 전체메뉴 기능
 totalMenuBtn.addEventListener("click", e => {
     e.preventDefault();
-    totalMenuBtn.classList.add("on");
-    totalMenuContents.classList.add("on");
-    new Anime(totalMenuBtn, {
-        prop: "padding-left",
-        value: 30,
-        duration: 1000,
+    totalMenuBtn.classList.toggle("on");
+    totalMenuContents.classList.toggle("on");
+    /* new Anime(totalMenuBtn, {
+        prop: "left",
+        value: 10,
+        duration: 700,
         callback: new Anime(totalMenuBtn, {
-            prop: "padding-top",
-            value: 50,
-            duration: 3500,
+            prop: "left",
+            value: -10,
+            duration: 1500,
         })
-    })
+    }) */
 });
-totalMenuBtn.addEventListener("focus", () => {
-    totalMenuBtn.classList.add("on");
-    //totalMenuContents.classList.add("on");
+totalMenuBtn.addEventListener("focus", e => {
+    e.preventDefault();
+    totalMenuBtn.classList.toggle("on");
+    totalMenuContents.classList.toggle("on");
 });
 
 
