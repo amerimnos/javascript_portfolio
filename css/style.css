@@ -287,9 +287,12 @@ header {
         color: #a4e2ff; }
 
 /* === main page start ===*/
-.swiper {
+.swiperConts {
   width: 100%;
   height: 730px; }
+  .swiperConts .mainSwiper {
+    overflow: hidden;
+    height: 100%; }
 
 .main-slideTxt {
   position: absolute;
@@ -319,6 +322,7 @@ header {
     float: right;
     display: flex;
     width: 1015px;
+    background-color: #fff;
     box-shadow: 0px 14px 20px 6px #e9e9e9; }
     .swiperMoveBtn__inner::after {
       content: "";
@@ -326,11 +330,21 @@ header {
       clear: both; }
     .swiperMoveBtn__inner li {
       position: relative;
+      top: 0;
       display: flex;
       width: calc((100% - 134px) / 3);
       padding: 29px;
       border-right: solid 1px #e0e0e0;
       background-color: #fff; }
+      .swiperMoveBtn__inner li::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 0%;
+        background: #f8e71c; }
       .swiperMoveBtn__inner li img {
         width: 70px;
         border-radius: 100%; }
@@ -343,15 +357,12 @@ header {
         font-size: 18px;
         font-weight: 600;
         color: #2f2f2f; }
-      .swiperMoveBtn__inner li.on::after {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        width: 100%;
-        background: #f8e71c; }
+      .swiperMoveBtn__inner li.swiper-slide-thumb-active {
+        transform: translateY(-15px);
+        transition: all 0.7s; }
+        .swiperMoveBtn__inner li.swiper-slide-thumb-active::after {
+          width: 100%;
+          transition: all 3s; }
     .swiperMoveBtn__inner li:last-child {
       width: 135px;
       border-right: none;
@@ -369,20 +380,20 @@ header {
         content: "";
         display: block;
         position: absolute;
-        width: 42%;
+        width: 33%;
         height: 2px;
         transform-origin: left;
         transform: rotateZ(45deg);
-        background-color: #2b2b2b; }
+        background-color: #5b5b5b; }
       .swiperMoveBtn__inner .prevBtn::after {
         content: "";
         display: block;
         position: absolute;
-        width: 42%;
+        width: 33%;
         height: 2px;
         transform-origin: left;
         transform: rotateZ(-45deg);
-        background-color: #2b2b2b; }
+        background-color: #5b5b5b; }
     .swiperMoveBtn__inner .nextBtn {
       display: flex;
       align-items: center;
@@ -394,20 +405,20 @@ header {
         content: "";
         display: block;
         position: absolute;
-        width: 42%;
+        width: 33%;
         height: 2px;
         transform-origin: right;
         transform: rotateZ(45deg);
-        background-color: #2b2b2b; }
+        background-color: #5b5b5b; }
       .swiperMoveBtn__inner .nextBtn::after {
         content: "";
         display: block;
         position: absolute;
-        width: 42%;
+        width: 33%;
         height: 2px;
         transform-origin: right;
         transform: rotateZ(-45deg);
-        background-color: #2b2b2b; }
+        background-color: #5b5b5b; }
 
 .main-conts1 {
   position: relative;
@@ -2434,17 +2445,17 @@ header {
       margin-left: 6px;
       margin-right: 0px; }
 
-  .swiper {
+  .swiperConts {
     width: 100%;
-    height: auto; }
-    .swiper .swiper-slide img {
+    height: 470px; }
+    .swiperConts .swiper-slide img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover; }
 
   .main-slideTxt {
-    width: 100%;
+    width: auto;
     top: 13%;
     left: 9%;
     margin-left: initial; }
@@ -2660,6 +2671,9 @@ header {
   .main-slideTxt__tit {
     font-size: 28px; }
 
+  .swiperConts {
+    height: 300px; }
+
   .swiperMoveBtn {
     float: right;
     width: calc(100% - 134px);
@@ -2817,7 +2831,7 @@ header {
   .aboutConts4 .item .sns {
     width: 65%; }
 
-  /* === about page end ===*/
+  /* === $lg about page end ===*/
   /* === $lg community page start ===*/
   .commuConts2 {
     width: 100%; }
@@ -2863,7 +2877,7 @@ header {
     border-radius: initial;
     box-shadow: initial; }
 
-  /* === youtube page end ===*/
+  /* === $lg youtube page end ===*/
   /* === $lg location page start ===*/
   .locationConts * {
     font-family: "Cormorant", serif; }
@@ -2935,8 +2949,6 @@ header {
     header .nav__contactUs {
       order: 1;
       margin: 0 0 0 24px;
-      padding: 8px;
-      border: solid 2px #dfdfdf;
       border-radius: 7px; }
     header .nav__login {
       order: 3;
@@ -2944,10 +2956,15 @@ header {
     header .nav__total-menu {
       order: 4; }
 
+  .swiperConts {
+    height: 300px; }
+
   .main-slideTxt {
+    top: 9.2%;
     left: 80px; }
     .main-slideTxt__tit {
-      font-size: 20px; }
+      font-size: 3.2vw;
+      margin-bottom: 13px; }
     .main-slideTxt__underline {
       font-size: 15px;
       font-weight: 500; }
@@ -2957,6 +2974,7 @@ header {
     width: 100%;
     position: relative; }
     .swiperMoveBtn__inner {
+      transform: none !important;
       position: initial;
       width: calc(100% - 80px * 2);
       margin: 0 auto;
@@ -2969,7 +2987,7 @@ header {
           font-size: 14px; }
       .swiperMoveBtn__inner li:last-child {
         position: absolute;
-        top: -120px;
+        top: -175px;
         left: 0;
         justify-content: space-between;
         width: 100%;
@@ -3399,13 +3417,17 @@ header {
     display: none; }
 
   .main-slideTxt {
-    left: 50px; }
+    left: 75px;
+    width: initial; }
     .main-slideTxt__tit {
       font-size: 17px;
       margin-bottom: 9px; }
     .main-slideTxt__underline {
       font-size: 14px;
       font-weight: 500; }
+
+  .swiperConts {
+    height: 200px; }
 
   .swiperMoveBtn__inner {
     width: 100%; }
@@ -3429,11 +3451,11 @@ header {
     .swiperMoveBtn__inner .prevBtn {
       margin-left: 15px;
       background-color: #ffffffa8;
-      border-radius: 10px; }
+      border-radius: 5px; }
     .swiperMoveBtn__inner .nextBtn {
       margin-right: 15px;
       background-color: #ffffffa8;
-      border-radius: 10px; }
+      border-radius: 5px; }
 
   .main-conts1 {
     width: 100%;
@@ -3921,15 +3943,19 @@ header {
       font-size: 20px;
       margin-left: 0; }
   header .nav__contactUs {
-    display: none; }
+    display: block;
+    margin-left: 0;
+    border: none;
+    z-index: 10; }
   header .nav__login {
     display: none; }
   header .nav__total-menu {
     margin-right: 0; }
 
-  .swiper {
+  .swiperConts {
+    position: relative;
     height: 200px; }
-    .swiper .swiper-slide img {
+    .swiperConts .swiper-slide img {
       height: 100%;
       object-fit: cover; }
 
@@ -3939,7 +3965,8 @@ header {
     top: calc(50% - 97px / 2);
     padding: 10px 0;
     text-align: center;
-    background-color: #a7c9ee78; }
+    background-color: #a7c9ee45;
+    z-index: 1; }
     .main-slideTxt__tit {
       color: #fff; }
     .main-slideTxt__underline {

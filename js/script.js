@@ -94,7 +94,7 @@ animation.addEventListener('complete', function () {
 }) */
 
 
-// 메인페이지 Emailjs 활용
+// contact us - Emailjs 활용
 (function () {
     emailjs.init('user_ishCOgh8Xg8yrPckRxRDH');
 })();
@@ -113,20 +113,20 @@ window.onload = function () {
                     bm.classList.remove('on');
                     alert('Thank you!');
                 })
-                
+
             }, function (error) {
                 alert('Please try again.', error);
             });
     });
 }
-nav__contactUs.addEventListener('click', (e)=>{
+nav__contactUs.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('contact')
     contactForm.classList.add('on');
 })
 
 
-//헤더 메뉴 기능
+//GNB 기능 - 접근성 포함
 for (const el of gnbItem) {
     el.onfocus = e => {
         e.currentTarget.nextElementSibling.classList.add("on");
@@ -150,11 +150,9 @@ for (const el of gnbSubitem) {
 
 //헤더 전체메뉴 기능
 totalMenuBtn.addEventListener("click", e => {
-
     e.preventDefault();
     totalMenuBtn.classList.add("on");
     totalMenuContents.classList.add("on");
-
     new Anime(totalMenuBtn, {
         prop: "padding-left",
         value: 30,
@@ -162,10 +160,9 @@ totalMenuBtn.addEventListener("click", e => {
         callback: new Anime(totalMenuBtn, {
             prop: "padding-top",
             value: 50,
-            duration: 3000,
+            duration: 3500,
         })
     })
-
 });
 totalMenuBtn.addEventListener("focus", () => {
     totalMenuBtn.classList.add("on");
@@ -173,15 +170,29 @@ totalMenuBtn.addEventListener("focus", () => {
 });
 
 
-/* const swiper = new Swiper('.swiper', {
-    //direction: 'vertical',
-    loop: true,
+let ThumSwiper = new Swiper('.ThumSwiper', {
+    watchSlidesProgress: true,
+    freeMode: true,
+    slidesPerView: 'auto',
+});
 
+let swiper = new Swiper('.mainSwiper', {
+    loop: true,
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     navigation: {
-        nextEl: '.prevBtn',
-        prevEl: '.nextBtn',
-    }
-}); */
+        prevEl: '.prevBtn',
+        nextEl: '.nextBtn',
+    },
+    thumbs: {
+        swiper: ThumSwiper
+    },
+});
+
+
 
 
 
