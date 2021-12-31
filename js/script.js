@@ -147,7 +147,6 @@ for (const el of gnbSubitem) {
 }
 
 
-
 //헤더 전체메뉴 기능
 totalMenuBtn.addEventListener("click", e => {
     e.preventDefault();
@@ -178,10 +177,11 @@ let ThumSwiper = new Swiper('.ThumSwiper', {
 });
 
 let swiper = new Swiper('.mainSwiper', {
+    speed: 500,
     loop: true,
     slidesPerView: 'auto',
     autoplay: {
-        delay: 2500,
+        delay: 3700,
         disableOnInteraction: false,
     },
     navigation: {
@@ -190,6 +190,23 @@ let swiper = new Swiper('.mainSwiper', {
     },
     thumbs: {
         swiper: ThumSwiper
+    },
+});
+
+
+// Swiper는 speed 적용 후에 delay 값을 적용하므로, 2번째 슬라이드 부터는 다른 트렌지션 적용.
+document.querySelector('html').style.setProperty('--swiperBtnTransition', '4s');
+
+
+new Typed('#typing', {
+    //strings: ['Malesuada ^1000 fames ac Turpis egestas.', 'Malesuada ^1000 fames ac Turpis egestas.'],
+    stringsElement: '.typedTxt',
+    startDelay: 500, //언제 시작할지
+    typeSpeed: 40, //타이핑 속도
+    backDelay: 1200,
+    shuffle: true,
+    onComplete: (self) => {
+        document.querySelector('.typed-cursor').style.display = 'none';
     },
 });
 
