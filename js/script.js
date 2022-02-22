@@ -61,7 +61,7 @@ class Anime {
             this.selector.style[this.option.prop] = result;
         } else if (this.option.prop === "scroll") {
             window.scroll(0, result);
-        } else if (this.isString == "string") { //34번째줄에서 이미 변환했는데 굳이 또 할필요가??
+        } else if (this.isString == "string") {
             this.selector.style[this.option.prop] = result + "%";
         } else {
             this.selector.style[this.option.prop] = result + "px";
